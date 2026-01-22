@@ -59,6 +59,7 @@
 			<li>
 				<cycles>1</cycles>
 				<moteDef>Mote_CannonPlume</moteDef>
+				<offset>(0, 0, 1)</offset>
 				<animationType>Reset</animationType>
 			</li>
 		</motes>

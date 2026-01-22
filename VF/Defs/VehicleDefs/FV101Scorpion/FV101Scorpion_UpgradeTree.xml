@@ -98,7 +98,7 @@
 								<gizmoLabel>90mm Mk3 M-A1</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, 1.5)</aimPieOffset>
+								<aimPieOffset>(0, 2.4)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>

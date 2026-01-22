@@ -34,8 +34,8 @@
 		<maxRange>64.9</maxRange>
 		
 		<recoil>
-			<distanceTotal>0.7</distanceTotal>
-			<distancePerTick>0.15</distancePerTick>
+			<distanceTotal>0.3</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
 			<speedMultiplierPostRecoil>0.35</speedMultiplierPostRecoil>
 		</recoil>
 		<fireModes>
@@ -65,7 +65,7 @@
 			<li>
 				<cycles>1</cycles>
 				<moteDef>Mote_CannonPlume</moteDef>
-				<offset>(0, 0, 2)</offset>
+				<offset>(0, 0, 2.5)</offset>
 				<animationType>Reset</animationType>
 			</li>
 		</motes>

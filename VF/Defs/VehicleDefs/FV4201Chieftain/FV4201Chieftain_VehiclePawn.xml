@@ -422,8 +422,8 @@
 						<turretDef>CGF1_MWP_Vehicle_TurretGun_120mm_L11A2_ChieftainMk2</turretDef>
 						
 						<renderProperties>
-							<north>(0, -0.3)</north>
-							<south>(0, 1.4)</south>
+							<north>(0, 0.5)</north>
+							<south>(0, 0.2)</south>
 							<east>(0.2, 0.55)</east>
 						</renderProperties>
 						<drawLayer>2</drawLayer>
@@ -431,7 +431,7 @@
 						<gizmoLabel>120mm L11A2</gizmoLabel>
 						
 						<angleRestricted/>
-						<aimPieOffset>(0, 2.25)</aimPieOffset>
+						<aimPieOffset>(0, 3.4)</aimPieOffset>
 						
 						<key>mainTurret</key>
 					</li>
