@@ -95,7 +95,7 @@
 								<gizmoLabel>L7A1</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								<aimPieOffset>(0, 0.5)</aimPieOffset>
 								
 								<key>commanderTurret</key>
 								<parentKey>mainTurret</parentKey>
@@ -141,7 +141,7 @@
 								<gizmoLabel>M1919A4</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								<aimPieOffset>(0, 0.5)</aimPieOffset>
 								
 								<key>commanderTurret</key>
 								<parentKey>mainTurret</parentKey>
@@ -187,7 +187,7 @@
 								<gizmoLabel>M2HB</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								<aimPieOffset>(0, 0.9)</aimPieOffset>
 								
 								<key>commanderTurret</key>
 								<parentKey>mainTurret</parentKey>

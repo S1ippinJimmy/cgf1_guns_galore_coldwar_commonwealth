@@ -2,7 +2,7 @@
 
 <Defs>
 	
-	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_120mm_L11A2_ChieftainMk2" ParentName="VehicleTurretBase">
 		<defName>CGF1_MWP_Vehicle_TurretGun_120mm_L11A2_ChieftainMk2</defName>
 		<label>120mm L11A2</label>
 		<description>A 120mm tank gun originally mounted on the British FV4201 Chieftain Mk2 MBT.</description>
@@ -42,7 +42,7 @@
 			<li>
 				<shotsPerBurst>1</shotsPerBurst>
 				<ticksBetweenBursts>1</ticksBetweenBursts>
-				<spreadRadius>4</spreadRadius>
+				<spreadRadius>4.9</spreadRadius>
 				<label>Single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
@@ -60,6 +60,43 @@
 				<li>Steel</li>
 			</thingDefs>
 		</ammunition>
+		
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<offset>(0, 0, 2.5)</offset>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_120mm_L11A2_ChieftainMk2">
+		<defName>CGF1_MWP_Vehicle_TurretGun_120mm_L11A5_ChieftainMk10</defName>
+		<label>120mm L11A5</label>
+		<description>A 120mm tank gun originally mounted on the British FV4201 Chieftain Mk5 MBT (and subsequent "Totem Pole" variants.)</description>
+		<gizmoIconTexPath>CGF1/Vehicle/FV4201Chieftain/120mm_L11A5_ChieftainMk10_Icon</gizmoIconTexPath>
+
+		<rotationSpeed>1.35</rotationSpeed>
+		
+		<maxRange>68.9</maxRange>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<spreadRadius>4</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV4201Chieftain/120mm_L11A5_ChieftainMk10</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(9.2, 9.2)</drawSize>
+		</graphicData>
 		
 		<motes>
 			<li>

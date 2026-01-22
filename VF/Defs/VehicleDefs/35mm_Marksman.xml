@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_35mm_Marksman</defName>
+		<label>35mm Marksman</label>
+		<description>A British anti-air system consisting of twin Oerlikon GDF 35mm autocannons and a Marconi Series 400 radar.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_GG_SFXR_30mm_Autocannon_1</shotSound>
+		<!--<reloadSound>VVE_IFVCannonReload</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/FV4201Chieftain/35mm_Marksman_Icon</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Bullet_30x170mmB_Auto</projectile>
+		<reloadTimer>12</reloadTimer>
+		<warmUpTimer>3.2</warmUpTimer>
+		
+		<magazineCapacity>440</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.8</rotationSpeed>
+		
+		<projectileOffset>4</projectileOffset>
+		
+		<minRange>4.9</minRange>
+		<maxRange>45.9</maxRange>
+		
+		<recoil>
+			<distanceTotal>0.16</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+		<fireModes>
+			<li>
+				<shotsPerBurst>24</shotsPerBurst>
+				<ticksBetweenShots>3</ticksBetweenShots>
+				<ticksBetweenBursts>120</ticksBetweenBursts>
+				<spreadRadius>5.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV4201Chieftain/35mm_Marksman</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(8.8, 8.8)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+		
+		<projectileShifting>
+			<li>-1.05</li>
+			<li>1.05</li>
+		</projectileShifting>
+	</Vehicles.VehicleTurretDef>
+</Defs>

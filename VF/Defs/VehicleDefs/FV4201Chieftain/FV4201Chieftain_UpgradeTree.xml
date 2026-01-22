@@ -13,11 +13,13 @@
 				<label>Remove main turret</label>
 				<description>Remove the main turret and its armament from the vehicle. Reduces mass.</description>
 				
-				<icon>CGF1/Vehicle/FV433Abbot/FV433Abbot_east</icon>
+				<icon>CGF1/Vehicle/FV4201Chieftain/FV4201Chieftain_east</icon>
 				
 				<work>2500</work>
 				
 				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_120mmL11A5</li>
+					<li>MainTurret_35mmMarksman</li>
 					<li>Pintle_M1919A4</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
@@ -33,11 +35,6 @@
 							<li>commanderTurret</li>
 						</removeTurrets>
 					</li>
-					<li MayRequire="OskarPotocki.VanillaVehiclesExpanded" Class="Vehicles.CompUpgrade">
-						<deactivate>
-							<li Class="VanillaVehiclesExpanded.CompProperties_ReloadableWithVerbs" />
-						</deactivate>
-					</li>
 					<li Class = "Vehicles.StatUpgrade">
 						<vehicleStats>
 							<li>
@@ -48,9 +45,189 @@
 					</li>
 				</upgrades>
 			</li>
+			<li>
+				<key>MainTurret_120mmL11A5</key>
+				<label>Chieftain Mk10 turret (120mm L11A5)</label>
+				<description>Replace the main turret with an upgraded and up-armored Chieftain Mk10 version, featuring an L11A5 gun with increased accuracy and range.</description>
+				
+				<icon>CGF1/Vehicle/FV4201Chieftain/120mm_L11A5_ChieftainMk10_Icon</icon>
+				
+				<work>15000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>MainTurret_35mmMarksman</li>
+					<li>Pintle_M1919A4</li> <!-- disabled one-way due to a VF bug -->
+					<li>Pintle_M2HB</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_120mm_L11A5_ChieftainMk10</turretDef>
+								
+								<renderProperties>
+									<north>(0, 0.5)</north>
+									<south>(0, 0.2)</south>
+									<east>(0.3, 0.55)</east>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+
+								<gizmoLabel>120mm L11A5</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 3.5)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L8A1_Coaxial_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.1,1.3)</north>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								
+								<gizmoLabel>L8A1</gizmoLabel>
+								
+								<angleRestricted>(345, 15)</angleRestricted>
+								<aimPieOffset>(0, 0.05)</aimPieOffset>
+								
+								<key>coaxialMG</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L7A1_Small_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.3,-0.4)</north>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								
+								<gizmoLabel>L7A1</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.5)</aimPieOffset>
+								
+								<key>commanderTurret</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+							<li>commanderTurret</li>
+						</removeTurrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>25</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>100</Steel>
+					<ComponentIndustrial>3</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>MainTurret_35mmMarksman</key>
+				<label>Chieftain Marksman SPAAG turret (35mm Oerlikon)</label>
+				<description>Replace the main turret with a 35mm Marksman anti-air system (consisting of twin Oerlikon GDF 35mm autocannons and a Marconi Series 400 radar.)</description>
+				
+				<icon>CGF1/Vehicle/FV4201Chieftain/35mm_Marksman_Icon</icon>
+				
+				<work>15000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>MainTurret_120mmL11A5</li>
+					<li>Pintle_M1919A4</li>
+					<li>Pintle_M2HB</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 7)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_35mm_Marksman</turretDef>
+								
+								<renderProperties>
+									<north>(0, 0.5)</north>
+									<south>(0, 0.2)</south>
+									<east>(0.3, 0.55)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+
+								<gizmoLabel>35mm Oerlikon</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 3.5)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+							<li>commanderTurret</li>
+						</removeTurrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>50</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>120</Steel>
+					<ComponentIndustrial>5</ComponentIndustrial>
+				</ingredients>
+			</li>
 			
 			<!-- Roof Guns -->
 
+			<!--<li>
+				<key>Pintle_Removed</key>
+				<label>Remove pintle turret</label>
+				<description>Remove the pintle turret and its armament from the vehicle.</description>
+				
+				<icon>CGF1/Vehicle/Upgrade/Remove</icon>
+				
+				<work>100</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>Pintle_M1919A4</li>
+					<li>Pintle_M2HB</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(30, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<removeTurrets>
+							<li>commanderTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+			</li>-->
 			<li>
 				<key>Pintle_M1919A4</key>
 				<label>Pintle: M1919A4</label>
@@ -62,27 +239,31 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
+					<li>MainTurret_35mmMarksman</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
 				
-				<gridCoordinate>(30, 4)</gridCoordinate>
+				<gridCoordinate>(30, 1)</gridCoordinate>
 				<drawSize>(50, 50)</drawSize>
 				
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
+						<removeTurrets>
+							<li>commanderTurret</li>
+						</removeTurrets>
 						<turrets>
 							<li>
 								<turretDef>CGF1_MWP_Vehicle_TurretGun_M1919A4_Small_</turretDef>
 								
 								<renderProperties>
-									<north>(0.5, -0.5)</north>
+									<north>(-0.3,-0.4)</north>
 								</renderProperties>
 								<drawLayer>4</drawLayer>
 
 								<gizmoLabel>M1919A4</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								<aimPieOffset>(0, 0.5)</aimPieOffset>
 								
 								<key>commanderTurret</key>
 								<parentKey>mainTurret</parentKey>
@@ -107,27 +288,31 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
+					<li>MainTurret_35mmMarksman</li>
 					<li>Pintle_M1919A4</li>
 				</disableIfUpgradeNodesEnabled>
 				
-				<gridCoordinate>(30, 7)</gridCoordinate>
+				<gridCoordinate>(30, 4)</gridCoordinate>
 				<drawSize>(50, 50)</drawSize>
 				
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
+						<removeTurrets>
+							<li>commanderTurret</li>
+						</removeTurrets>
 						<turrets>
 							<li>
 								<turretDef>CGF1_MWP_Vehicle_TurretGun_M2HB_Small_</turretDef>
 								
 								<renderProperties>
-									<north>(0.5, -0.4)</north>
+									<north>(-0.3,-0.4)</north>
 								</renderProperties>
 								<drawLayer>4</drawLayer>
 
 								<gizmoLabel>M2HB</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								<aimPieOffset>(0, 0.9)</aimPieOffset>
 								
 								<key>commanderTurret</key>
 								<parentKey>mainTurret</parentKey>
