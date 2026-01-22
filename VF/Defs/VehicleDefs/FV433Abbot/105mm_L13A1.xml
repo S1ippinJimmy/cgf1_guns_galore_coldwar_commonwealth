@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_105mm_L13A1</defName>
+		<label>105mm L13A1</label>
+		<description>A 105mm artillery cannon originally mounted on the British FV433 Abbot self-propelled gun.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_GG_SFXR_105mm_Cannon</shotSound>
+		<reloadSound>Artillery_ShellLoaded</reloadSound>
+		<gizmoIconTexPath>CGF1/Vehicle/FV433Abbot/105mm_L13A1_Icon</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Shell_105mm_Artillery_</projectile>
+		<reloadTimer>28.8</reloadTimer>
+		<reloadTimerMultiplierPerCrewCount>
+			<points>
+				<li>(1, 1)</li>
+				<li>(2, 0.5)</li>
+			</points>
+		</reloadTimerMultiplierPerCrewCount>
+		<warmUpTimer>4</warmUpTimer>
+		
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>5</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.3</rotationSpeed>
+		
+		<projectileOffset>3</projectileOffset>
+		
+		<minRange>18.9</minRange>
+		
+		<recoil>
+			<distanceTotal>0.26</distanceTotal>
+			<distancePerTick>0.065</distancePerTick>
+			<speedMultiplierPostRecoil>0.15</speedMultiplierPostRecoil>
+		</recoil>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<spreadRadius>4.9</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV433Abbot/105mm_L13A1</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(9, 9)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+		
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+</Defs>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV107" ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV107</defName>
+		<label>30mm RARDEN FV107</label>
+		<description>A powerful 30mm autocannon originally mounted on the British FV107 Scimitar tracked fighting vehicle.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_GG_SFXR_37mm_Cannon_2</shotSound>
+		<!--<reloadSound>VVE_IFVCannonReload</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/FV107Scimitar/30mm_RARDEN_FV107_Icon</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Bullet_30x170mmB_Auto</projectile>
+		<reloadTimer>4.4</reloadTimer>
+		<warmUpTimer>3.2</warmUpTimer>
+		
+		<magazineCapacity>165</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		
+		<projectileOffset>3</projectileOffset>
+		
+		<minRange>2.9</minRange>
+		<maxRange>48.9</maxRange>
+		
+		<recoil>
+			<distanceTotal>0.15</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+		<fireModes>
+			<li>
+				<shotsPerBurst>3</shotsPerBurst>
+				<ticksBetweenShots>27</ticksBetweenShots>
+				<ticksBetweenBursts>120</ticksBetweenBursts>
+				<spreadRadius>1.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>120</ticksBetweenShots>
+				<ticksBetweenBursts>120</ticksBetweenBursts>
+				<spreadRadius>0.9</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV107Scimitar/30mm_RARDEN_FV107</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(7.7, 7.7)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV107">
+		<defName>CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV432</defName>
+		<label>30mm RARDEN FV432</label>
+		<description>A powerful 30mm autocannon originally mounted on specialized FV432 tracked fighting vehicles, specifically those attached to the Berlin Brigade.</description>
+
+		<gizmoIconTexPath>CGF1/Vehicle/FV432/30mm_RARDEN_FV432_Icon</gizmoIconTexPath>
+		
+		<rotationSpeed>2.1</rotationSpeed>
+		
+		<projectileOffset>3</projectileOffset>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV432/30mm_RARDEN_FV432</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CGF1_MWP_Vehicle_FV107Scimitar_Blueprint</defName>
+		<label>FV107 Scimitar</label>
+		<description>A tracked, armored British reconnaissance vehicle based on the CVR(T) platform.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunnner x1, Commander x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV107Scimitar/FV107Scimitar</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.4, 4.8)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>13500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(3, 5)</size>
+		
+		<researchPrerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>400</Steel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>CGF1_MWP_Vehicle_FV107Scimitar</thingToSpawn>
+		
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_LMG_BeltFed_T1">
+		<defName>CGF1_MWP_Stoner_63_LMG_485mm_</defName>
+		<label>Stoner 63 LMG 4.85mm</label>
+		<description>Caliber: 4.85x49mm. 100-round bullet link. Select-Fire.
+		
+This is a Stoner 63 LMG rifle converted to 4.85x49mm caliber, the same round developed for the Enfield XL60 and XL70 series in the United Kingdom. During the 1970s, a single gun of this type (as well as a Colt M16) were produced in advance of the NATO trials that would adopt the 5.56mm round as standard through the organization. While the conversion was apparently successful, ultimately the 5.56mm round beat the 4.85mm round in the trials, forever cementing the 4.85mm cartridge as an obscure relic of history.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Stoner_63_LMG_485mm</texPath>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>7.6</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Special_Prototype</li>
+			<li>CGF1_LMG_Military_Advanced</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarUK</li>
+			<li>CGF1_GunsGalore_ColdWarUK_LMG</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_485x49mm_Auto</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>8</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_Rifle_Auto1</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.70,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

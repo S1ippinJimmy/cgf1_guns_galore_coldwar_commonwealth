@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_SMG_T1">
+		<defName>CGF1_MWP_HK_MP5K_</defName>
+		<label>HK MP5K</label>
+		<description>Caliber: 9x19mm Parabellum. 30-round detachable mag. Select-Fire.
+		
+A shortened variant of the roller-delayed blowback MP5 introduced by Heckler &amp; Koch in 1976 - the MP5K was designed for close quarters fighting (when even the standard MP5 was too large), clandestine operations, security details, and special forces. The shortened bolt gives it a higher rate of fire than the standard version. The MP5K has a distinct cultural position even relative to the popularity of the wider MP5 family.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/HK_MP5K</texPath>
+			<drawSize>1.10</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>2.00</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_SMG_Civilian</li>
+			<li>CGF1_SMG_Military</li>
+			<li>CGF1_SMG_Military_Advanced</li>
+			
+			<li>CGF1_FG_CWUSA_Police_SWAT_Light</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarUK</li>
+			<li>CGF1_GunsGalore_ColdWarUK_SMG</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_9x19mmParabellum_Pistol</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_SMG2</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.3,0.10)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>1.5</generateCommonality> <!-- Everywhere -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_SMG_T1">
+		<defName>CGF1_MWP_HK_MP5K_SD_</defName>
+		<label>HK MP5K (SD)</label>
+		<description>Caliber: 9x19mm Parabellum. 30-round detachable mag. Select-Fire.
+		
+A shortened variant of the roller-delayed blowback MP5 introduced by Heckler &amp; Koch in 1976 - the MP5K was designed for close quarters fighting (when even the standard MP5 was too large), clandestine operations, security details, and special forces. The shortened bolt gives it a higher rate of fire than the standard version. The MP5K has a distinct cultural position even relative to the popularity of the wider MP5 family.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/UP/HK_MP5K_SD</texPath>
+			<drawSize>1.10</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>2.20</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_SMG_Civilian</li>
+			<li>CGF1_SMG_Military</li>
+			<li>CGF1_SMG_Military_SpecOps</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<equippedStatOffsets>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_9x19mmParabellum_Pistol</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_SMG_SD1</soundCast>
+				<muzzleFlashScale>1</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+	
+</Defs>

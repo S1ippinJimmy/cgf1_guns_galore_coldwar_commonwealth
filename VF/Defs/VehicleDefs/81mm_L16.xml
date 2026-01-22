@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_81mm_L16</defName>
+		<label>81mm L16 Mortar</label>
+		<description>An 81mm mortar designed in the United Kingdom.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_GG_SFXR_81mm_Mortar</shotSound>
+		<reloadSound>Artillery_ShellLoaded</reloadSound>
+		<gizmoIconTexPath>CGF1/Building/L16_Mortar/L16_Mortar_MenuIcon</gizmoIconTexPath>
+		
+		<projectile>Bullet_Shell_HighExplosive</projectile>
+		<reloadTimer>18</reloadTimer> 
+		<warmUpTimer>3.5</warmUpTimer>
+		
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>4</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		
+		<projectileOffset>1</projectileOffset>
+		
+		<minRange>10.9</minRange>
+		
+		<recoil>
+			<distanceTotal>0.15</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<spreadRadius>4.4</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV432/81mm_L16</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(2.25, 2.25)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+</Defs>

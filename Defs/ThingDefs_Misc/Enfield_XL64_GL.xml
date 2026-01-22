@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T0">
+		<defName>CGF1_MWP_Enfield_XL64_GL_</defName>
+		<label>Enfield XL64 GL</label>
+		<description>Caliber: 4.85x49mm. 20-round detachable mag. Select-Fire.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Enfield_XL64_GL</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>4.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Special_Prototype</li>
+			<li>CGF1_AR_Military</li>
+			<li>CGF1_AR_Military_Advanced</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarUK</li>
+			<li>CGF1_GunsGalore_ColdWarUK_AR</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_485x49mm_Auto</defaultProjectile>
+				<warmupTime>1.15</warmupTime>
+				<range>33.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_Rifle_Auto9</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>XL64</label>
+				<commandIcon>CGF1/Gun/Enfield_XL64_GL</commandIcon>
+			</li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_40x46mm_Grenade</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>20.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>CGF1_MWP_SFX_GrenadeLauncher1</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>2</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+				<label>XL64 GL</label>
+				<commandIcon>CGF1/Underbarrel/XL64_GL</commandIcon>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>XL64</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+					</li>
+					<li>
+						<label>XL64 GL</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+						<description>Caliber: 40x46mm. 1-round tube. Single shot.					
+An interesting proprietary grenade launcher that was designed for the XL60 series of rifles, evidently it was not widely adopted and never received an official designation or identifier.</description>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.9,0.9)</drawSize>
+				<offsets>
+					<li>(0.52,0.05)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

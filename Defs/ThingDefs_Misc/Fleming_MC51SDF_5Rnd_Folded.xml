@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BattleRifle_T1_Carbine">
+		<defName>CGF1_MWP_Fleming_MC51SDF_5Rnd_Folded_</defName>
+		<label>Fleming MC51SDF (5Rnd Folded)</label>
+		<description>Caliber: 7.62x51mm NATO. 5-round detachable mag. Select-Fire.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Fleming_MC51SDF_5Rnd_Folded</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>3.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_AR_Military_SpecOps</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarUK</li>
+			<li>CGF1_GunsGalore_ColdWarUK_BR</li>
+		</tradeTags>
+		<equippedStatOffsets>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x51mmNATO_Auto</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_Rifle_Semi_SD1</soundCast>
+				<muzzleFlashScale>1</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.UpgradeTreeDef>
+		<defName>CGF1_MWP_Vehicle_FV107Scimitar_UpgradeTree</defName>
+		 
+		<nodes>
+		
+			<!-- Smoke Launchers -->
+			
+			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+				<key>SmokeLauncher</key>
+				<label>Smoke Launcher</label>
+				<description>Install a set of smokescreen launchers on the roof of the vehicle. Has four charges and requires chemfuel to reload when spent.</description>
+				
+				<icon>CGF1/Vehicle/Upgrade/SmokePop</icon>
+				
+				<work>4000</work>
+				
+				<gridCoordinate>(24, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.CompUpgrade">
+						<activate>
+							<li MayRequire="OskarPotocki.VanillaVehiclesExpanded" Class="VanillaVehiclesExpanded.CompProperties_ReloadableWithVerbs">
+								<maxCharges>4</maxCharges>
+								<ammoDef>Chemfuel</ammoDef>
+								<ammoCountToRefill>10</ammoCountToRefill>
+								<soundReload>Standard_Reload</soundReload>
+								<hotKey>Misc4</hotKey>
+								<chargeNoun>smokepop</chargeNoun>
+								<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+								<verbs>
+									<li>
+										<verbClass>VanillaVehiclesExpanded.Verb_Smokepop</verbClass>
+										<label>pop smoke</label>
+										<violent>false</violent>
+										<hasStandardCommand>true</hasStandardCommand>
+										<commandIcon>CGF1/Vehicle/Upgrade/SmokePop</commandIcon>
+										<targetable>false</targetable>
+										<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+										<onlyManualCast>true</onlyManualCast>
+									</li>
+								</verbs>
+								<commandDescriptions>
+									<li>A defensive smokescreen. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. Has four charges and will require a chemfuel reload after they are spent. Right click to reload.</li>
+								</commandDescriptions>
+							</li>
+						</activate>
+					</li>
+				</upgrades>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/FV107Scimitar/FV107ScimitarSmoke</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(2.4,4.8)</drawSize>
+							<layer>1</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+
+				<ingredients>
+					<Steel>20</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			
+			<!-- Main Guns -->
+			
+			<li>
+				<key>MainTurret_Removed</key>
+				<label>Remove main turret</label>
+				<description>Remove the main turret and its armament from the vehicle. Reduces mass.</description>
+				
+				<icon>CGF1/Vehicle/FV107Scimitar/FV107Scimitar_east</icon>
+				
+				<work>2500</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>Pintle_L7A1</li>
+					<li>Pintle_M2HB</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+						</removeTurrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>-50</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+			</li>
+			
+			<!-- Roof Guns -->
+			
+			<li>
+				<key>Pintle_L7A1</key>
+				<label>Pintle: L7A1</label>
+				<description>Install an L7A1 GPMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/Coax/L7A1</icon>
+				
+				<work>7000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>Pintle_M2HB</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(30, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L7A1_Small_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.4, 0.0)</north>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+
+								<gizmoLabel>L7A1</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								<!--<defaultAngleRotated>270</defaultAngleRotated>-->
+								
+								<key>commanderTurret</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>85</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>Pintle_M2HB</key>
+				<label>Pintle: M2HB</label>
+				<description>Install an M2HB HMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/Coax/Browning_M2HB</icon>
+				
+				<work>8000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>Pintle_L7A1</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(30, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_M2HB_Small_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.4, 0.0)</north>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								
+								<key>commanderTurret</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>100</Steel>
+					<ComponentIndustrial>3</ComponentIndustrial>
+				</ingredients>
+			</li>	
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+</Defs>

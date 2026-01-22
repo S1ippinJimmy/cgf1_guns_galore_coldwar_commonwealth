@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_76mm_L23A1</defName>
+		<label>76mm L23A1</label>
+		<description>A 76mm cannon originally mounted on the British FV101 Scorpion tracked fighting vehicle.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_GG_SFXR_76mm_Cannon</shotSound>
+		<!--<reloadSound>VVE_IFVCannonReload</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/FV101Scorpion/76mm_L23A1_Icon</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Shell_76mm_L5A1_</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>3.4</warmUpTimer>
+		
+		<magazineCapacity>1</magazineCapacity>
+		<chargePerAmmoCount>4</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.3</rotationSpeed>
+		
+		<projectileOffset>3</projectileOffset>
+		
+		<minRange>3.9</minRange>
+		<maxRange>55</maxRange>
+		
+		<recoil>
+			<distanceTotal>0.4</distanceTotal>
+			<distancePerTick>0.2</distancePerTick>
+			<speedMultiplierPostRecoil>0.35</speedMultiplierPostRecoil>
+		</recoil>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<spreadRadius>2.9</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV101Scorpion/76mm_L23A1</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6.9, 6.9)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+		
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+</Defs>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>CGF1_MWP_Turret_Vickers_Vigilant_</defName>
+    <label>Vickers Vigilant ATGM</label>
+    <description>A stationary anti-tank guided missile launcher.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>CGF1/Building/Vickers_Vigilant_Base</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+	<size>(1,2)</size>
+    <techLevel>Industrial</techLevel>
+    <uiIconPath>CGF1/Building/Vickers_Vigilant/Vickers_Vigilant_MenuIcon</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>true</rotatable>
+	<thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <costList>
+      <Steel>5</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <CGF1_MWP_Vickers_Vigilant_>1</CGF1_MWP_Vickers_Vigilant_>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+	  <Mass>28.5</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.97</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Breakdownable" />
+      <!--<li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until out of ammo</fuelLabel>
+        <fuelGizmoLabel>Ammo</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>1</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.6</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>0.1</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Out of ammo</outOfFuelMessage>
+        <fuelIconPath>CGF1/UI/Ammo</fuelIconPath>
+      </li>-->
+    </comps>
+    <interactionCellOffset>(1,0,0)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>CGF1_MWP_TurretGun_Vickers_Vigilant_</turretGunDef>
+      <turretBurstCooldownTime>3</turretBurstCooldownTime>
+      <turretBurstWarmupTime>6</turretBurstWarmupTime>
+	  <turretTopOffset>(-0.3,0)</turretTopOffset>
+	  <turretTopDrawSize>1.5</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>CGF1_MWP_Research_T8_AtomicAgeEmplacements</li>
+    </researchPrerequisites>
+	<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarUK_Turret</li>
+		</tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>CGF1_MWP_TurretGun_Vickers_Vigilant_</defName>
+    <label>Vickers Vigilant ATGM</label>
+    <description>A mounted Vickers Vigilant ATGM.</description>
+    <graphicData>
+      <texPath>CGF1/Building/Vickers_Vigilant/Vickers_Vigilant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>16</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>CGF1_MWP_Bullet_120mm_Vigilant</defaultProjectile>
+		<forcedMissRadius>0.01</forcedMissRadius>
+		<warmupTime>6</warmupTime>
+		<minRange>11.9</minRange>
+        <range>40.9</range>
+		<soundCast>CGF1_MWP_SFX_Launcher_AA</soundCast>
+		<soundAiming>CGF1_MWP_SFX_Launcher_LockOn</soundAiming>
+		<soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+		<targetParams>
+			<canTargetBuildings>true</canTargetBuildings>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>
+		<muzzleFlashScale>16</muzzleFlashScale>
+        <!--<consumeFuelPerShot>1</consumeFuelPerShot>-->
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

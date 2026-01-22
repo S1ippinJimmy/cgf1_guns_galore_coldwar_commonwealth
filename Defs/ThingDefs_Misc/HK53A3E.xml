@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_AssaultRifle_Carbine_T0">
+		<defName>CGF1_MWP_HK53A3E_</defName>
+		<label>HK53A3E</label>
+		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/HK53A3E</texPath>
+			<drawSize>1.06</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_AR_Military</li>
+			<li>CGF1_AR_Military_Advanced</li>
+			
+			<li>CGF1_Weapon_HLRW_CombineGrunt</li>
+			<li>CGF1_Weapon_HLRW_CombineSoldier</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarGermAus</li>
+			<li>CGF1_GunsGalore_ColdWarGermAus_AR</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_556x45mmNATO_Auto</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_Rifle_Auto9</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.57,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+	</ThingDef>
+	
+</Defs>

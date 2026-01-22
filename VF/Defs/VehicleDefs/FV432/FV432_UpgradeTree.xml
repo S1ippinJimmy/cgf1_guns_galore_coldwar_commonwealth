@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.UpgradeTreeDef>
+		<defName>CGF1_MWP_Vehicle_FV432_UpgradeTree</defName>
+		 
+		<nodes>
+		
+			<!-- Smoke Launchers -->
+			
+			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+				<key>SmokeLauncher</key>
+				<label>Smoke Launcher</label>
+				<description>Install a set of smokescreen launchers on the roof of the vehicle. Has four charges and requires chemfuel to reload when spent.</description>
+				
+				<icon>CGF1/Vehicle/Upgrade/SmokePop</icon>
+				
+				<work>4000</work>
+				
+				<gridCoordinate>(24, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.CompUpgrade">
+						<activate>
+							<li MayRequire="OskarPotocki.VanillaVehiclesExpanded" Class="VanillaVehiclesExpanded.CompProperties_ReloadableWithVerbs">
+								<maxCharges>4</maxCharges>
+								<ammoDef>Chemfuel</ammoDef>
+								<ammoCountToRefill>10</ammoCountToRefill>
+								<soundReload>Standard_Reload</soundReload>
+								<hotKey>Misc4</hotKey>
+								<chargeNoun>smokepop</chargeNoun>
+								<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+								<verbs>
+									<li>
+										<verbClass>VanillaVehiclesExpanded.Verb_Smokepop</verbClass>
+										<label>pop smoke</label>
+										<violent>false</violent>
+										<hasStandardCommand>true</hasStandardCommand>
+										<commandIcon>CGF1/Vehicle/Upgrade/SmokePop</commandIcon>
+										<targetable>false</targetable>
+										<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+										<onlyManualCast>true</onlyManualCast>
+									</li>
+								</verbs>
+								<commandDescriptions>
+									<li>A defensive smokescreen. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. Has four charges and will require a chemfuel reload after they are spent. Right click to reload.</li>
+								</commandDescriptions>
+							</li>
+						</activate>
+					</li>
+				</upgrades>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/FV432/FV432Smoke</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3,5)</drawSize>
+							<layer>3</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+
+				<ingredients>
+					<Steel>20</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			
+			<!-- Roof Guns -->
+			
+			<li>
+				<key>Pintle_L7A1</key>
+				<label>Pintle: L7A1</label>
+				<description>Install an L7A1 GPMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/Coax/L7A1</icon>
+				
+				<work>7000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>Pintle_M1919A4</li>
+					<li>Pintle_M2HB</li>
+					<li>MainTurret_30mmRARDEN</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(30, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L7A1_Small_</turretDef>
+								
+								<renderProperties>
+									<north>(0.55, 1.4)</north>
+									<south>(-0.55, 0.05)</south>
+									<east>(0.8, 0.3)</east>
+									<west>(-0.75, 1.1)</west>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+
+								<gizmoLabel>L7A1</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								
+								<key>commanderTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>85</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>Pintle_M1919A4</key>
+				<label>Pintle: M1919A4</label>
+				<description>Install an M1919A4 MMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/Coax/Browning_M1919A4</icon>
+				
+				<work>7250</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>Pintle_L7A1</li>
+					<li>Pintle_M2HB</li>
+					<li>MainTurret_30mmRARDEN</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(30, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_M1919A4_Small_</turretDef>
+								
+								<renderProperties>
+									<north>(0.55, 1.4)</north>
+									<south>(-0.55, 0.05)</south>
+									<east>(0.8, 0.3)</east>
+									<west>(-0.75, 1.1)</west>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+
+								<gizmoLabel>M1919A4</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								
+								<key>commanderTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>90</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>Pintle_M2HB</key>
+				<label>Pintle: M2HB</label>
+				<description>Install an M2HB HMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/Coax/Browning_M2HB</icon>
+				
+				<work>8000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>Pintle_L7A1</li>
+					<li>Pintle_M1919A4</li>
+					<li>MainTurret_30mmRARDEN</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(30, 7)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_M2HB_Small_</turretDef>
+								
+								<renderProperties>
+									<north>(0.55, 1.4)</north>
+									<south>(-0.55, 0.05)</south>
+									<east>(0.8, 0.3)</east>
+									<west>(-0.75, 1.1)</west>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								
+								<key>commanderTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>100</Steel>
+					<ComponentIndustrial>3</ComponentIndustrial>
+				</ingredients>
+			</li>
+			
+			<!-- Main Gun -->
+			
+			<li>
+				<key>MainTurret_L6WOMBAT</key>
+				<label>Main Turret: L6 WOMBAT</label>
+				<description>Install an L6 WOMBAT recoilless rifle on the rear roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/Coax/L6_Wombat</icon>
+				
+				<work>10000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_81mmL16_Mortar</li>
+					<li>MainTurret_30mmRARDEN</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<roles>
+							<li> <!-- Adding a new role named Gunner -->
+								<key>gunner</key>
+								<label>Gunner</label>
+							   
+								<slots>1</slots>
+								<slotsToOperate>1</slotsToOperate>
+							   
+								<handlingTypes>Turret</handlingTypes>
+
+								<turretIds>
+									<li>mainTurret</li>
+								</turretIds>
+							</li>
+						</roles>
+					</li>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L6WOMBAT_</turretDef>
+								
+								<renderProperties>
+									<north>(0, 0)</north>
+									<south>(0, 1)</south>
+									<east>(-0.9, 0.6)</east>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+
+								<gizmoLabel>L6 WOMBAT</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, -0.25)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>120</Steel>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			
+			<li>
+				<key>MainTurret_81mmL16_Mortar</key>
+				<label>81mm L16 Mortar</label>
+				<description>Install an 81mm L16 Mortar in the rear of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Building/L16_Mortar/L16_Mortar_MenuIcon</icon>
+				
+				<work>15000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_L6WOMBAT</li>
+					<li>MainTurret_30mmRARDEN</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<roles>
+							<li> <!-- Adding a new role named Gunner -->
+								<key>gunner</key>
+								<label>Gunner</label>
+							   
+								<slots>1</slots>
+								<slotsToOperate>1</slotsToOperate>
+							   
+								<handlingTypes>Turret</handlingTypes>
+
+								<turretIds>
+									<li>mainTurret</li>
+								</turretIds>
+							</li>
+						</roles>
+					</li>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_81mm_L16</turretDef>
+								
+								<renderProperties>
+									<north>(0, 0)</north>
+									<south>(0, 1.4)</south>
+									<east>(-1.05, 0.7)</east>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+
+								<gizmoLabel>81mm Mortar</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>30</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/FV432/FV432Rarden</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3, 5)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+				
+				<ingredients>
+					<Steel>120</Steel>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			
+			<li>
+				<key>MainTurret_30mmRARDEN</key>
+				<label>30mm RARDEN</label>
+				<description>Install a 30mm RARDEN turret (with coaxial L37A1 GPMG) on the rear roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/FV432/30mm_RARDEN_FV432_Icon</icon>
+				
+				<work>15000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>Pintle_L7A1</li>
+					<li>Pintle_M1919A4</li>
+					<li>Pintle_M2HB</li>
+					<li>MainTurret_L6WOMBAT</li>
+					<li>MainTurret_81mmL16_Mortar</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 7)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<roles>
+							<li> <!-- Adding a new role named Gunner -->
+								<key>gunner</key>
+								<label>Gunner</label>
+							   
+								<slots>1</slots>
+								<slotsToOperate>1</slotsToOperate>
+							   
+								<handlingTypes>Turret</handlingTypes>
+
+								<turretIds>
+									<li>mainTurret</li>
+								</turretIds>
+							</li>
+						</roles>
+					</li>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV432</turretDef>
+								
+								<renderProperties>
+									<north>(0, -0.3)</north>
+									<south>(0, 1.4)</south>
+									<east>(-1.05, 0.65)</east>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+
+								<gizmoLabel>30mm RARDEN</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.5)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L37A1_Coaxial_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.21,0.85)</north>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+								
+								<gizmoLabel>L37A1</gizmoLabel>
+								
+								<angleRestricted>(345, 15)</angleRestricted>
+								<aimPieOffset>(0, 0.05</aimPieOffset>
+								
+								<key>coaxialMG</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>75</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>200</Steel>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+</Defs>

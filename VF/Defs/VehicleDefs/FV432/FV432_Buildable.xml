@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CGF1_MWP_Vehicle_FV432_Blueprint</defName>
+		<label>FV432</label>
+		<description>A tracked British armored patrol carrier made by GKN Sankey.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Commander x1, Passenger x10\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV432/FV432</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 5)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>11500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(3, 5)</size>
+		
+		<researchPrerequisites>
+			<li>CGF1_MWP_Research_T8_AtomicAgeFirearms</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>400</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>CGF1_MWP_Vehicle_FV432_</thingToSpawn>
+		
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

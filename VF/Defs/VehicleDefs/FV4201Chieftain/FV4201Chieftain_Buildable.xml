@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CGF1_MWP_Vehicle_FV4201Chieftain_Blueprint</defName>
+		<label>FV4201 Chieftain</label>
+		<description>A British main battle tank.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Commander x1, Gunner x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV4201Chieftain/FV4201Chieftain</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.2, 6.4)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>22000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(3, 6)</size>
+		
+		<researchPrerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>620</Steel>
+			<ComponentIndustrial>24</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>CGF1_MWP_Vehicle_FV4201Chieftain_</thingToSpawn>
+		
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

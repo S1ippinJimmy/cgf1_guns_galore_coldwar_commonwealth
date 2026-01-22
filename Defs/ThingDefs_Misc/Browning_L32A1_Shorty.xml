@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="CGF1_MWP_SemiAutoShotgun_Coach_T1">
+		<defName>CGF1_MWP_Browning_L32A1_Shorty_</defName>
+		<label>Browning L32A1 Shorty</label>
+		<description>Caliber: 12 Gauge. 4-round tube. Semi-Automatic.
+		
+A recoil-operated semi-automatic shotgun, based on the ubiquitous Browning Auto-5 design. The shotgun was adopted as the L32A1 by the British military in midst of the Malayan Emergency, with a large quantity procured for the perceived advantages that a shotgun could have in the close quarters jungle combat being encountered. This one has a sawed-off barrel.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Browning_L32A1_Shorty</texPath>
+			<drawSize>1.10</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>3.65</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Shotgun_Civilian</li>
+			<li>CGF1_Shotgun_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_12Gauge_Slug_Shotgun</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>12.9</range>
+				<soundCast>CGF1_MWP_SFX_Shotgun1</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.0,1.4)</drawSize>
+				<offsets>
+					<li>(0.45,0.09)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.05</generateCommonality> <!-- Uncommon -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_SemiBattleRifle_T2">
+		<defName>CGF1_MWP_Hall_EM1_</defName>
+		<label>Hall EM-1</label>
+		<description>Caliber: 7.92x33mm Kurz. 10-round detachable mag. Semi-Automatic.
+		
+An early Cold War prototype self-loading rifle designed by Major Eric Hall of the United Kingdom. Outside a patent and a mostly deterioriated drawing, very little is known about the EM-1 rifle, except that it was semi-automatic capable and chambered in 8mm Kurz.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Hall_EM1</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.35</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Special_Prototype</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarUK</li>
+			<li>CGF1_GunsGalore_ColdWarUK_LongGun</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_792x33mmKurz_Rifle</defaultProjectile>
+				<warmupTime>1.35</warmupTime>
+				<range>33.9</range>
+				<soundCast>CGF1_MWP_SFX_Rifle_Auto9</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.6,0.04)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>
