@@ -90,7 +90,7 @@
 					
 					<hitbox>
 						<cells>
-							<li>(0, 1)</li>
+							<li>(1, 1)</li>
 						</cells>
 					</hitbox>
 					
@@ -108,7 +108,7 @@
 					
 					<hitbox>
 						<cells>
-							<li>(1, 1)</li>
+							<li>(0, 1)</li>
 						</cells>
 					</hitbox>
 					
