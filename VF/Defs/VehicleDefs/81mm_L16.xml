@@ -2,7 +2,7 @@
 
 <Defs>
 	
-	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_81mm_L16" ParentName="VehicleTurretBase">
 		<defName>CGF1_MWP_Vehicle_TurretGun_81mm_L16</defName>
 		<label>81mm L16 Mortar</label>
 		<description>An 81mm mortar designed in the United Kingdom.</description>
@@ -24,7 +24,7 @@
 		
 		<projectileOffset>1</projectileOffset>
 		
-		<minRange>10.9</minRange>
+		<minRange>16.9</minRange>
 		
 		<recoil>
 			<distanceTotal>0.15</distanceTotal>
@@ -52,5 +52,16 @@
 				<li>Steel</li>
 			</thingDefs>
 		</ammunition>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_81mm_L16">
+		<defName>CGF1_MWP_Vehicle_TurretGun_81mm_L16P</defName>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV432/81mm_L16P</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(2.25, 2.25)</drawSize>
+		</graphicData>
 	</Vehicles.VehicleTurretDef>
 </Defs>
