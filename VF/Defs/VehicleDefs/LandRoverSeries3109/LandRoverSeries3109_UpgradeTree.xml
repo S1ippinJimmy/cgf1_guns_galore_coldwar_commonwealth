@@ -150,7 +150,7 @@
 								<gizmoLabel>M1919A4</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, 0.5)</aimPieOffset>
+								<aimPieOffset>(0, 0.3)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
@@ -232,10 +232,10 @@
 								</renderProperties>
 								<drawLayer>40</drawLayer>
 
-								<gizmoLabel>M1919A4</gizmoLabel>
+								<gizmoLabel>M2HB</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, 0.9)</aimPieOffset>
+								<aimPieOffset>(0, 0.7)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
