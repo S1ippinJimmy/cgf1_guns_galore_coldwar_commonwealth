@@ -1,125 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>	
-	<Vehicles.VehicleDef ParentName="CGF1_MWP_VehiclePawn_Armor">
-		<defName>CGF1_MWP_Vehicle_FV433Abbot_</defName>
-		<label>FV433 Abbot</label>
-		<description>A tracked British self-propelled gun made by Vickers.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Commander x1, Gunner x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		
-		<graphicData>
-			<texPath>CGF1/Vehicle/FV433Abbot/FV433Abbot</texPath>
-			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(3, 5)</drawSize>
-			<color>(215, 200, 175)</color>
-			<colorTwo>(56, 55, 50)</colorTwo>
-			<colorThree>(100, 69, 59)</colorThree>
-		</graphicData>
+	<Vehicles.VehicleDef Name="CGF1_MWP_Vehicle_Base_CVRT" ParentName="CGF1_MWP_VehiclePawn_Armor" Abstract="True">
 		
 		<fillPercent>1</fillPercent>
-		
-		<buildDef>CGF1_MWP_Vehicle_FV433Abbot_Blueprint</buildDef>
-		
-		<size>(3, 5)</size>
-		
+
 		<vehicleCategory>Combat</vehicleCategory>
 		<techLevel>Industrial</techLevel>
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.86</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.82</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0.5</Flammability>
-			<MarketValue>6270</MarketValue>
-			<PackRadius MayRequire="OskarPotocki.VanillaVehiclesExpanded">6.9</PackRadius>
 		</statBases>
-		
-		<vehicleStats>
-			<Mass>480</Mass>
-			<MoveSpeed>6.3</MoveSpeed>
-			<CargoCapacity>150</CargoCapacity>
-			<RepairRate>0.4</RepairRate>
-			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.05</AccelerationRate>
-		</vehicleStats>
-		
+
 		<soundSustainersOnEvent>
 			<li>
 				<start>IgnitionOn</start>
 				<stop>IgnitionOff</stop>
-				<value>CGF1_GG_SFXR_Sustainer_Idle_MediumTank</value>
+				<value>CGF1_GG_SFXR_Sustainer_Idle_LightTank</value>
 			</li>
 		</soundSustainersOnEvent>
-		
-		<race>
-			<baseBodySize>4.5</baseBodySize>
-		</race>
-		
-		<properties>
-			<winterCostMultiplier>2.125</winterCostMultiplier>
-			<worldSpeedMultiplier>1.00</worldSpeedMultiplier>
-			<visibilityWeight>8.5</visibilityWeight>
-
-			<vehicleJobLimitations>
-				<li>(RepairVehicle, 3)</li>
-			</vehicleJobLimitations>
-			
-			<roles>
-				<li>
-					<key>driver</key>
-					<label>Driver</label>
-					<slots>1</slots>
-					<slotsToOperate>1</slotsToOperate>
-					
-					<handlingTypes>
-						<li>Movement</li>
-					</handlingTypes>
-					
-					<hitbox>
-						<cells>
-							<li>(0, 1)</li>
-						</cells>
-					</hitbox>
-				</li>
-				<li>
-					<key>commander</key>
-					<label>Commander</label>
-					<slots>1</slots>
-					<slotsToOperate>1</slotsToOperate>
-					
-					<handlingTypes>Turret</handlingTypes>
-					
-					<turretIds>
-						<li>commanderTurret</li>
-					</turretIds>
-					
-					<hitbox>
-						<cells>
-							<li>(0, 0)</li>
-						</cells>
-					</hitbox>
-				</li>
-				<li>
-					<key>gunner</key>
-					<label>Gunner</label>
-					<slots>2</slots>
-					<slotsToOperate>1</slotsToOperate>
-					
-					<handlingTypes>Turret</handlingTypes>
-					
-					<turretIds>
-						<li>mainTurret</li>
-					</turretIds>
-					
-					<hitbox>
-						<cells>
-							<li>(-1, 0)</li>
-							<li>(1, 0)</li>
-						</cells>
-					</hitbox>
-				</li>
-			</roles>
-		</properties>
 		
 		<components>
 			<li>
@@ -153,7 +56,7 @@
 			<li>
 				<key>LeftTrack</key>
 				<label>Left track</label>
-				<health>200</health>
+				<health>180</health>
 				<depth>External</depth>
 				
 				<tags>
@@ -172,7 +75,7 @@
 			<li>
 				<key>RightTrack</key>
 				<label>Right track</label>
-				<health>200</health>
+				<health>180</health>
 				<depth>External</depth>
 					
 				<tags>
@@ -291,8 +194,13 @@
 			<li>
 				<key>FrontArmorPlating</key>
 				<label>Front armor plating</label>
-				<health>240</health>
+				<health>220</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+				</armor>
 				
 				<hitbox>
 					<side>Front</side>
@@ -301,8 +209,13 @@
 			<li>
 				<key>LeftArmorPlating</key>
 				<label>Left armor plating</label>
-				<health>240</health>
+				<health>220</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+				</armor>
 				
 				<hitbox>
 					<side>Left</side>
@@ -313,6 +226,11 @@
 				<label>Right armor plating</label>
 				<health>220</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+				</armor>
 				
 				<hitbox>
 					<side>Right</side>
@@ -330,7 +248,7 @@
 			</li>
 			<li>
 				<key>Chemtank</key>
-				<label>Fueltank</label>
+				<label>Chemtank</label>
 				<health>100</health>
 				<depth>Internal</depth>
 				
@@ -380,67 +298,10 @@
 				
 				<armor>
 					<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+					<ArmorRating_Sharp>0.87</ArmorRating_Sharp>
 				</armor>
 			</li>
 		</components>
 		
-		<comps>
-			<li Class="Vehicles.CompProperties_FueledTravel">
-				<fuelType>Chemfuel</fuelType>
-				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>32</fuelConsumptionRate>
-				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
-				<fuelCapacity>75</fuelCapacity>
-			</li>
-			<li Class = "Vehicles.CompProperties_UpgradeTree">
-				<def>CGF1_MWP_Vehicle_FV433Abbot_UpgradeTree</def>
-			</li>
-			<li Class="Vehicles.CompProperties_VehicleTurrets">
-				<turrets>
-					<li>
-						<turretDef>CGF1_MWP_Vehicle_TurretGun_105mm_L13A1</turretDef>
-						
-						<renderProperties>
-							<north>(0, -0.3)</north>
-							<south>(0, 1.4)</south>
-							<east>(-1.2, 0.55)</east>
-						</renderProperties>
-						<drawLayer>2</drawLayer>
-						
-						<gizmoLabel>105mm L13A1</gizmoLabel>
-						
-						<angleRestricted/>
-						<aimPieOffset>(0, 2.25)</aimPieOffset>
-						
-						<key>mainTurret</key>
-					</li>
-				</turrets>
-			</li>
-			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded" Class="VanillaVehiclesExpanded.CompProperties_ReloadableWithVerbs">
-				<maxCharges>4</maxCharges>
-				<ammoDef>Chemfuel</ammoDef>
-				<ammoCountToRefill>10</ammoCountToRefill>
-				<soundReload>Standard_Reload</soundReload>
-				<hotKey>Misc4</hotKey>
-				<chargeNoun>smokepop</chargeNoun>
-				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<verbs>
-					<li>
-						<verbClass>VanillaVehiclesExpanded.Verb_Smokepop</verbClass>
-						<label>pop smoke</label>
-						<violent>false</violent>
-						<hasStandardCommand>true</hasStandardCommand>
-						<commandIcon>CGF1/Vehicle/Upgrade/SmokePop</commandIcon>
-						<targetable>false</targetable>
-						<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-						<onlyManualCast>true</onlyManualCast>
-					</li>
-				</verbs>
-				<commandDescriptions>
-					<li>A defensive smokescreen. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. Has four charges and will require a chemfuel reload after they are spent. Right click to reload.</li>
-				</commandDescriptions>
-			</li>
-		</comps>
 	</Vehicles.VehicleDef>
 </Defs>

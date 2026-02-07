@@ -2,23 +2,23 @@
 
 <Defs>	
 	<Vehicles.VehicleDef ParentName="CGF1_MWP_VehiclePawn_Armor">
-		<defName>CGF1_MWP_Vehicle_FV4201Chieftain_</defName>
-		<label>FV4201 Chieftain</label>
-		<description>A British main battle tank.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Commander x1, Gunner x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<defName>CGF1_MWP_Vehicle_AVGPCougar</defName>
+		<label>AVGP Cougar</label>
+		<description>A tracked, armored Canadian vehicle based originally on the Swiss Mowag Piranha.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunnner x1, Commander x1, Passenger x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		
 		<graphicData>
-			<texPath>CGF1/Vehicle/FV4201Chieftain/FV4201Chieftain</texPath>
+			<texPath>CGF1/Vehicle/AVGP/AVGPCougar</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(3.3, 6.6)</drawSize>
-			<color>(215, 200, 175)</color>
-			<colorTwo>(56, 55, 50)</colorTwo>
+			<drawSize>(2.92, 6.8)</drawSize>
+			<color>(140, 150, 100)</color>
+			<colorTwo>(70, 35, 50)</colorTwo>
 			<colorThree>(100, 69, 59)</colorThree>
 		</graphicData>
 		
 		<fillPercent>1</fillPercent>
 		
-		<buildDef>CGF1_MWP_Vehicle_FV4201Chieftain_Blueprint</buildDef>
+		<buildDef>CGF1_MWP_Vehicle_AVGPCougar_Blueprint</buildDef>
 		
 		<size>(3, 6)</size>
 		
@@ -27,38 +27,36 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0.5</Flammability>
-			<MarketValue>6635</MarketValue>
-			<PackRadius MayRequire="OskarPotocki.VanillaVehiclesExpanded">6.9</PackRadius>
+			<MarketValue>5000</MarketValue>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>570</Mass>
-			<MoveSpeed>6.7</MoveSpeed>
-			<CargoCapacity>150</CargoCapacity>
-			<RepairRate>0.4</RepairRate>
-			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.04</AccelerationRate>
+			<Mass>480</Mass>
+			<MoveSpeed>7.8</MoveSpeed>
+			<CargoCapacity>165</CargoCapacity>
+			<RepairRate>0.3</RepairRate>
+			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.09</AccelerationRate>
 		</vehicleStats>
 		
 		<soundSustainersOnEvent>
 			<li>
 				<start>IgnitionOn</start>
 				<stop>IgnitionOff</stop>
-				<value>CGF1_GG_SFXR_Sustainer_Idle_MediumTank</value>
+				<value>CGF1_GG_SFXR_Sustainer_Idle_LightTank</value>
 			</li>
 		</soundSustainersOnEvent>
 		
 		<race>
-			<baseBodySize>5</baseBodySize>
+			<baseBodySize>4.5</baseBodySize>
 		</race>
 		
 		<properties>
-			<winterCostMultiplier>2.125</winterCostMultiplier>
-			<worldSpeedMultiplier>1.00</worldSpeedMultiplier>
-			<visibilityWeight>8.5</visibilityWeight>
+			<customRoadCosts AssignDefaults = "0.9"/>
+			<visibilityWeight>5</visibilityWeight>
 
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 3)</li>
@@ -82,6 +80,25 @@
 					</hitbox>
 				</li>
 				<li>
+					<key>gunner</key>
+					<label>Gunner</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>		
+					
+					<handlingTypes>Turret</handlingTypes>
+					
+					<turretIds>
+						<li>mainTurret</li>
+						<li>coaxialMG</li>
+					</turretIds>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 1)</li>
+						</cells>
+					</hitbox>
+				</li>
+				<li>
 					<key>commander</key>
 					<label>Commander</label>
 					<slots>1</slots>
@@ -95,28 +112,14 @@
 					
 					<hitbox>
 						<cells>
-							<li>(0, 1)</li>
+							<li>(-1, -1)</li>
 						</cells>
 					</hitbox>
 				</li>
 				<li>
-					<key>gunner</key>
-					<label>Gunner</label>
+					<key>passenger</key>
+					<label>Passenger</label>
 					<slots>2</slots>
-					<slotsToOperate>1</slotsToOperate>
-					
-					<handlingTypes>Turret</handlingTypes>
-					
-					<turretIds>
-						<li>mainTurret</li>
-					</turretIds>
-					
-					<hitbox>
-						<cells>
-							<li>(0, 0)</li>
-							<li>(1, 0)</li>
-						</cells>
-					</hitbox>
 				</li>
 			</roles>
 		</properties>
@@ -125,7 +128,7 @@
 			<li>
 				<key>Engine</key>
 				<label>Engine</label>
-				<health>120</health>
+				<health>100</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
 				
@@ -141,8 +144,9 @@
 				
 				<hitbox>
 					<cells>
+						<li>(-1, -1)</li>
 						<li>(0, -1)</li>
-						<li>(0, -2)</li>
+						<li>(1, -1)</li>
 					</cells>
 				</hitbox>
 				
@@ -151,48 +155,15 @@
 				</categories>
 			</li>
 			<li>
-				<key>LeftTrack</key>
-				<label>Left track</label>
-				<health>200</health>
+				<key>FirstLeftWheel</key>
+				<label>First left wheel</label>
+				<health>70</health>
 				<depth>External</depth>
 				
-				<tags>
-					<li>Wheel</li>
-				</tags>
-				
-				<hitbox>
-					<fallthrough>false</fallthrough>
-					<side>Left</side>
-				</hitbox>
-				
-				<categories>
-					<li>MoveSpeed</li>
-				</categories>
-			</li>
-			<li>
-				<key>RightTrack</key>
-				<label>Right track</label>
-				<health>200</health>
-				<depth>External</depth>
-					
-				<tags>
-					<li>Wheel</li>
-				</tags>
-				
-				<hitbox>
-					<fallthrough>false</fallthrough>
-					<side>Right</side>
-				</hitbox>
-				
-				<categories>
-					<li>MoveSpeed</li>
-				</categories>
-			</li>
-			<li>
-				<key>FrontLeftDriveSprocket</key>
-				<label>Front left drive sprocket</label>
-				<health>30</health>
-				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
 				
 				<tags>
 					<li>Wheel</li>
@@ -201,7 +172,7 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(-1, 3)</li>
+						<li>(-1, 2)</li>
 					</cells>
 				</hitbox>
 				
@@ -210,10 +181,15 @@
 				</categories>
 			</li>
 			<li>
-				<key>FrontRightDriveSprocket</key>
-				<label>Front right drive sprocket</label>
-				<health>30</health>
+				<key>SecondLeftWheel</key>
+				<label>Second left wheel</label>
+				<health>70</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
 				
 				<tags>
 					<li>Wheel</li>
@@ -222,7 +198,7 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(1, 3)</li>
+						<li>(-1, 1)</li>
 					</cells>
 				</hitbox>
 				
@@ -231,10 +207,15 @@
 				</categories>
 			</li>
 			<li>
-				<key>BackLeftDriveSprocket</key>
-				<label>Back left drive sprocket</label>
-				<health>30</health>
+				<key>ThirdLeftWheel</key>
+				<label>Third left wheel</label>
+				<health>70</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
 				
 				<tags>
 					<li>Wheel</li>
@@ -243,7 +224,7 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(-1, -2)</li>
+						<li>(-1, 0)</li>
 					</cells>
 				</hitbox>
 				
@@ -252,10 +233,15 @@
 				</categories>
 			</li>
 			<li>
-				<key>BackRightDriveSprocket</key>
-				<label>Back right drive sprocket</label>
-				<health>30</health>
+				<key>FirstRightWheel</key>
+				<label>First right wheel</label>
+				<health>70</health>
 				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
 				
 				<tags>
 					<li>Wheel</li>
@@ -264,7 +250,155 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(1, -2)</li>
+						<li>(1, 2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>SecondRightWheel</key>
+				<label>Second right wheel</label>
+				<health>70</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, 1)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>ThirdRightWheel</key>
+				<label>Third right wheel</label>
+				<health>70</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+				</armor>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, 0)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FirstLeftSuspension</key>
+				<label>First left suspension</label>
+				<health>20</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(-1, 2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>SecondLeftSuspension</key>
+				<label>Second left suspension</label>
+				<health>20</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(-1, 1)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>ThirdLeftSuspension</key>
+				<label>Third left suspension</label>
+				<health>20</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(-1, 0)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FirstRightSuspension</key>
+				<label>First right suspension</label>
+				<health>20</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(1, 2)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>SecondRightSuspension</key>
+				<label>Second right suspension</label>
+				<health>20</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(1, 1)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>ThirdRightSuspension</key>
+				<label>Third right suspension</label>
+				<health>20</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(1, 0)</li>
 					</cells>
 				</hitbox>
 				
@@ -291,13 +425,8 @@
 			<li>
 				<key>FrontArmorPlating</key>
 				<label>Front armor plating</label>
-				<health>240</health>
+				<health>220</health>
 				<depth>External</depth>
-				
-				<armor>
-					<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-					<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
-				</armor>
 				
 				<hitbox>
 					<side>Front</side>
@@ -306,12 +435,12 @@
 			<li>
 				<key>LeftArmorPlating</key>
 				<label>Left armor plating</label>
-				<health>240</health>
+				<health>220</health>
 				<depth>External</depth>
 				
 				<armor>
-					<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
 				</armor>
 				
 				<hitbox>
@@ -325,8 +454,8 @@
 				<depth>External</depth>
 				
 				<armor>
-					<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
 				</armor>
 				
 				<hitbox>
@@ -336,12 +465,12 @@
 			<li>
 				<key>BackArmorPlating</key>
 				<label>Rear armor plating</label>
-				<health>170</health>
+				<health>90</health>
 				<depth>External</depth>
 				
 				<armor>
-					<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
 				</armor>
 				
 				<hitbox>
@@ -350,8 +479,8 @@
 			</li>
 			<li>
 				<key>Chemtank</key>
-				<label>Fueltank</label>
-				<health>100</health>
+				<label>Chemtank</label>
+				<health>90</health>
 				<depth>Internal</depth>
 				
 				<reactors>
@@ -367,40 +496,42 @@
 				
 				<hitbox>
 					<cells>
-						<li>(0, -1)</li>
+						<li>(-1, -2)</li>
+						<li>(0, -2)</li>
+						<li>(1, -2)</li>
 					</cells>
 				</hitbox>
 			</li>
 			<li>
 				<key>Dashboard</key>
 				<label>Dashboard</label>
-				<health>60</health>
+				<health>50</health>
 				<depth>Internal</depth>
-				<hitWeight>5</hitWeight>
+				<hitWeight>3</hitWeight>
 			</li>
 			<li>
 				<key>SteeringApparatus</key>
 				<label>Steering apparatus</label>
-				<health>70</health>
+				<health>40</health>
 				<depth>Internal</depth>
-				<hitWeight>5</hitWeight>
+				<hitWeight>2</hitWeight>
 			</li>
 			<li>
 				<key>Alternator</key>
 				<label>Alternator</label>
-				<health>80</health>
+				<health>50</health>
 				<depth>Internal</depth>
 			</li>
 			<li>
 				<key>Roof</key>
 				<label>Roof</label>
-				<health>160</health>
+				<health>120</health>
 				<depth>External</depth>
 				<hitWeight>10</hitWeight>
 				
 				<armor>
-					<ArmorRating_Blunt>1.08</ArmorRating_Blunt>
-					<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.82</ArmorRating_Sharp>
 				</armor>
 			</li>
 		</components>
@@ -409,62 +540,46 @@
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>32</fuelConsumptionRate>
+				<fuelConsumptionRate>28</fuelConsumptionRate>
 				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
-				<fuelCapacity>75</fuelCapacity>
+				<fuelCapacity>85</fuelCapacity>
 			</li>
 			<li Class = "Vehicles.CompProperties_UpgradeTree">
-				<def>CGF1_MWP_Vehicle_FV4201Chieftain_UpgradeTree</def>
+				<def>CGF1_MWP_Vehicle_AVGPCougar_UpgradeTree</def>
 			</li>
 			<li Class="Vehicles.CompProperties_VehicleTurrets">
 				<turrets>
 					<li>
-						<turretDef>CGF1_MWP_Vehicle_TurretGun_120mm_L11A2_ChieftainMk2</turretDef>
+						<turretDef>CGF1_MWP_Vehicle_TurretGun_76mm_L23A1_AVGP</turretDef>
 						
 						<renderProperties>
-							<north>(0, 0.5)</north>
-							<south>(0, 0.2)</south>
-							<east>(0.2, 0.55)</east>
+							<north>(-0.1, -0.3)</north>
+							<south>(0.1, 1.15)</south>
+							<east>(-1.12, 0.82)</east>
 						</renderProperties>
 						<drawLayer>2</drawLayer>
 						
-						<gizmoLabel>120mm L11A2</gizmoLabel>
+						<gizmoLabel>76mm L23A1</gizmoLabel>
 						
 						<angleRestricted/>
-						<aimPieOffset>(0, 3.5)</aimPieOffset>
+						<aimPieOffset>(0, 2)</aimPieOffset>
 						
 						<key>mainTurret</key>
 					</li>
 					<li>
-						<turretDef>CGF1_MWP_Vehicle_TurretGun_L8A1_Coaxial_</turretDef>
+						<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
 						
 						<renderProperties>
-							<north>(-0.1,1.3)</north>
+							<north>(-0.21,0.85)</north>
 						</renderProperties>
 						<drawLayer>3</drawLayer>
 						
-						<gizmoLabel>L8A1</gizmoLabel>
+						<gizmoLabel>C5A1</gizmoLabel>
 						
 						<angleRestricted>(345, 15)</angleRestricted>
-						<aimPieOffset>(0, 0.05)</aimPieOffset>
+						<aimPieOffset>(0, 0.05</aimPieOffset>
 						
 						<key>coaxialMG</key>
-						<parentKey>mainTurret</parentKey>
-					</li>
-					<li>
-						<turretDef>CGF1_MWP_Vehicle_TurretGun_L7A1_Small_</turretDef>
-						
-						<renderProperties>
-							<north>(-0.3,-0.4)</north>
-						</renderProperties>
-						<drawLayer>4</drawLayer>
-						
-						<gizmoLabel>L7A1</gizmoLabel>
-						
-						<angleRestricted/>
-						<aimPieOffset>(0, 0.5)</aimPieOffset>
-						
-						<key>commanderTurret</key>
 						<parentKey>mainTurret</parentKey>
 					</li>
 				</turrets>

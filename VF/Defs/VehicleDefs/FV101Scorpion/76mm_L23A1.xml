@@ -2,7 +2,7 @@
 
 <Defs>
 	
-	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_76mm_L23A1" ParentName="VehicleTurretBase">
 		<defName>CGF1_MWP_Vehicle_TurretGun_76mm_L23A1</defName>
 		<label>76mm L23A1</label>
 		<description>A 76mm cannon originally mounted on the British FV101 Scorpion tracked fighting vehicle.</description>
@@ -54,6 +54,27 @@
 				<li>Steel</li>
 			</thingDefs>
 		</ammunition>
+		
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<offset>(0, 0, 1)</offset>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_76mm_L23A1">
+		<defName>CGF1_MWP_Vehicle_TurretGun_76mm_L23A1_AVGP</defName>
+		<description>A 76mm cannon originally mounted on the British FV101 Scorpion tracked fighting vehicle. This one is altered to fit on the Canadian AVGP Cougar APC.</description>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV101Scorpion/76mm_L23A1</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6.7, 6.7)</drawSize>
+		</graphicData>
 		
 		<motes>
 			<li>

@@ -65,6 +65,20 @@
 	</Vehicles.VehicleTurretDef>
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV107">
+		<defName>CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_AVGP</defName>
+		<projectileOffset>3</projectileOffset>
+		
+		<rotationSpeed>1.6</rotationSpeed>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV107Scimitar/30mm_RARDEN_FV107</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(7.5, 7.5)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV107">
 		<defName>CGF1_MWP_Vehicle_TurretGun_30mmRARDEN_FV432</defName>
 		<label>30mm RARDEN FV432</label>
 		<description>A powerful 30mm autocannon originally mounted on specialized FV432 tracked fighting vehicles, specifically those attached to the Berlin Brigade.</description>

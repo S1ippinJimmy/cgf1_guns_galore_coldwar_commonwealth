@@ -2,7 +2,7 @@
 
 <Defs>
 	
-	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_90mm_CockerillMk3MA1_" ParentName="VehicleTurretBase">
 		<defName>CGF1_MWP_Vehicle_TurretGun_90mm_CockerillMk3MA1_</defName>
 		<label>90mm Cockerill Mk3 M-A1</label>
 		<description>A low-velocity infantry support cannon originally mounted on the British FV101 Scorpion tracked fighting vehicle, specifically the "Scorpion 90" variant.</description>
@@ -55,6 +55,28 @@
 			</thingDefs>
 		</ammunition>
 		
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<offset>(0, 0, 1)</offset>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_90mm_CockerillMk3MA1_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_90mm_CockerillMk3MA1_AVGP</defName>
+		<label>90mm Cockerill Mk3 M-A1</label>
+		<description>A low-velocity infantry support cannon originally mounted on the British FV101 Scorpion tracked fighting vehicle, specifically the "Scorpion 90" variant. This one is altered to fit on the Canadian AVGP Cougar APC</description>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/FV101Scorpion/90mm_CockerillMk3MA1</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6.7, 6.7)</drawSize>
+		</graphicData>
+
 		<motes>
 			<li>
 				<cycles>1</cycles>

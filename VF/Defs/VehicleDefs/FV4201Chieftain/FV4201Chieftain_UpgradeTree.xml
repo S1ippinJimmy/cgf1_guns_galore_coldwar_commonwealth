@@ -20,7 +20,7 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_120mmL11A5</li>
 					<li>MainTurret_35mmMarksman</li>
-					<li>Pintle_M1919A4</li>
+					<li>Pintle_L3A4</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
 				
@@ -57,7 +57,7 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
 					<li>MainTurret_35mmMarksman</li>
-					<li>Pintle_M1919A4</li> <!-- disabled one-way due to a VF bug -->
+					<li>Pintle_L3A4</li> <!-- disabled one-way due to a VF bug -->
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
 				
@@ -150,7 +150,7 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
 					<li>MainTurret_120mmL11A5</li>
-					<li>Pintle_M1919A4</li>
+					<li>Pintle_L3A4</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
 				
@@ -213,7 +213,7 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
-					<li>Pintle_M1919A4</li>
+					<li>Pintle_L3A4</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
 				
@@ -229,9 +229,9 @@
 				</upgrades>
 			</li>-->
 			<li>
-				<key>Pintle_M1919A4</key>
-				<label>Pintle: M1919A4</label>
-				<description>Install an M1919A4 MMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				<key>Pintle_L3A4</key>
+				<label>Pintle: L3A4</label>
+				<description>Install an L3A4 MMG on the roof of the vehicle. Requires steel to refurbish.</description>
 				
 				<icon>CGF1/Vehicle/Turret/Coax/Browning_M1919A4</icon>
 				
@@ -253,14 +253,14 @@
 						</removeTurrets>
 						<turrets>
 							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_M1919A4_Small_</turretDef>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L3A4_Small_</turretDef>
 								
 								<renderProperties>
 									<north>(-0.3,-0.4)</north>
 								</renderProperties>
 								<drawLayer>4</drawLayer>
 
-								<gizmoLabel>M1919A4</gizmoLabel>
+								<gizmoLabel>L3A4</gizmoLabel>
 								
 								<angleRestricted/>
 								<aimPieOffset>(0, 0.5)</aimPieOffset>
@@ -289,7 +289,7 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
 					<li>MainTurret_35mmMarksman</li>
-					<li>Pintle_M1919A4</li>
+					<li>Pintle_L3A4</li>
 				</disableIfUpgradeNodesEnabled>
 				
 				<gridCoordinate>(30, 4)</gridCoordinate>

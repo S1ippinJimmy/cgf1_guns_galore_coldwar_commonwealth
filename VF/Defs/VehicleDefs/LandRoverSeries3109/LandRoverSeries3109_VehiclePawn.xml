@@ -4,7 +4,7 @@
 	<Vehicles.VehicleDef ParentName="CGF1_MWP_VehiclePawn_Car">
 		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109_</defName>
 		<label>Land Rover Series 3 109</label>
-		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger 1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/LandRoverSeries3109/LandRoverSeries3109</texPath>
@@ -27,8 +27,8 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.48</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0.5</Flammability>
 			<MarketValue>1650</MarketValue>

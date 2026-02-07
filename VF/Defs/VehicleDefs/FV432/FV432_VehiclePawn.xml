@@ -28,7 +28,7 @@
 		
 		<statBases>
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.88</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0.5</Flammability>
 			<MarketValue>4650</MarketValue>
@@ -291,11 +291,6 @@
 				<health>240</health>
 				<depth>External</depth>
 				
-				<armor>
-					<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-				</armor>
-				
 				<hitbox>
 					<side>Front</side>
 				</hitbox>
@@ -305,11 +300,6 @@
 				<label>Left armor plating</label>
 				<health>240</health>
 				<depth>External</depth>
-				
-				<armor>
-					<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-				</armor>
 				
 				<hitbox>
 					<side>Left</side>
@@ -321,11 +311,6 @@
 				<health>220</health>
 				<depth>External</depth>
 				
-				<armor>
-					<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-				</armor>
-				
 				<hitbox>
 					<side>Right</side>
 				</hitbox>
@@ -335,11 +320,6 @@
 				<label>Rear armor plating</label>
 				<health>170</health>
 				<depth>External</depth>
-				
-				<armor>
-					<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-				</armor>
 				
 				<hitbox>
 					<side>Back</side>
@@ -397,7 +377,7 @@
 				
 				<armor>
 					<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+					<ArmorRating_Sharp>0.88</ArmorRating_Sharp>
 				</armor>
 			</li>
 		</components>

@@ -15,7 +15,7 @@
 				<work>7000</work>
 				
 				<disableIfUpgradeNodesEnabled>
-					<li>MainTurret_M1919A4</li>
+					<li>MainTurret_L3A4</li>
 					<li>MainTurret_M2HB</li>
 					<li>MainTurret_L6WOMBAT</li>
 					<li>MainTurret_81mmL16_Mortar</li>
@@ -91,9 +91,9 @@
 				</ingredients>
 			</li>
 			<li>
-				<key>MainTurret_M1919A4</key>
-				<label>Main Turret: M1919A4</label>
-				<description>Install an M1919A4 MMG on the rear bed of the vehicle. Requires steel to refurbish.</description>
+				<key>MainTurret_L3A4</key>
+				<label>Main Turret: L3A4</label>
+				<description>Install an L3A4 MMG on the rear bed of the vehicle. Requires steel to refurbish.</description>
 				
 				<icon>CGF1/Vehicle/Turret/Coax/Browning_M1919A4</icon>
 				
@@ -138,7 +138,7 @@
 					<li Class="Vehicles.TurretUpgrade">
 						<turrets>
 							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_M1919A4_Medium_</turretDef>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_L3A4_Medium_</turretDef>
 								
 								<renderProperties>
 									<north>(0.01, -0.18)</north>
@@ -147,7 +147,7 @@
 								</renderProperties>
 								<drawLayer>40</drawLayer>
 
-								<gizmoLabel>M1919A4</gizmoLabel>
+								<gizmoLabel>L3A4</gizmoLabel>
 								
 								<angleRestricted/>
 								<aimPieOffset>(0, 0.3)</aimPieOffset>
@@ -186,7 +186,7 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_L7A1</li>
-					<li>MainTurret_M1919A4</li>
+					<li>MainTurret_L3A4</li>
 					<li>MainTurret_L6WOMBAT</li>
 					<li>MainTurret_81mmL16_Mortar</li>
 				</disableIfUpgradeNodesEnabled>
@@ -271,7 +271,7 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_L7A1</li>
-					<li>MainTurret_M1919A4</li>
+					<li>MainTurret_L3A4</li>
 					<li>MainTurret_M2HB</li>
 					<li>MainTurret_81mmL16_Mortar</li>
 				</disableIfUpgradeNodesEnabled>
@@ -355,7 +355,7 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_L7A1</li>
-					<li>MainTurret_M1919A4</li>
+					<li>MainTurret_L3A4</li>
 					<li>MainTurret_M2HB</li>
 					<li>MainTurret_L6WOMBAT</li>
 				</disableIfUpgradeNodesEnabled>

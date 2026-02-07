@@ -2,37 +2,37 @@
 
 <Defs>
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
-		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109_Blueprint</defName>
-		<label>Land Rover Series 3 109</label>
-		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<defName>CGF1_MWP_Vehicle_AVGPCougar_Blueprint</defName>
+		<label>AVGP Cougar</label>
+		<description>A tracked, armored Canadian vehicle based originally on the Swiss Mowag Piranha.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunnner x1, Commander x1, Passenger x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<designationCategory>VF_Vehicles</designationCategory>
 		
 		<graphicData>
-			<texPath>CGF1/Vehicle/LandRoverSeries3109/LandRoverSeries3109Buildable</texPath>
+			<texPath>CGF1/Vehicle/AVGP/AVGPCougar</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.3, 4.4)</drawSize>
+			<drawSize>(2.92, 6.8)</drawSize>
 		</graphicData>
 		
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>7500</WorkToBuild>
+			<WorkToBuild>15000</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
 		
-		<size>(2,5)</size>
+		<size>(3, 6)</size>
 		
 		<researchPrerequisites>
 			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
 		</researchPrerequisites>
 		
 		<costList>
-			<Steel>200</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Steel>450</Steel>
+			<ComponentIndustrial>14</ComponentIndustrial>
 		</costList>
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		
-		<thingToSpawn>CGF1_MWP_Vehicle_LandRoverSeries3109_</thingToSpawn>
+		<thingToSpawn>CGF1_MWP_Vehicle_AVGPCougar</thingToSpawn>
 		
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</Vehicles.VehicleBuildDef>
