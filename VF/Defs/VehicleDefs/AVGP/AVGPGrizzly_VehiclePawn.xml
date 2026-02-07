@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	<Vehicles.VehicleDef ParentName="CGF1_MWP_Vehicle_AVGP_Base">
+		<defName>CGF1_MWP_Vehicle_AVGPGrizzly</defName>
+		<label>AVGP Grizzly</label>
+		<description>A tracked, armored Canadian vehicle based originally on the Swiss Mowag Piranha.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunnner x1, Commander x1, Passenger x6\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/AVGP/AVGP</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.92, 6.8)</drawSize>
+			<color>(140, 150, 100)</color>
+			<colorTwo>(70, 35, 50)</colorTwo>
+			<colorThree>(100, 69, 59)</colorThree>
+		</graphicData>
+		
+		<buildDef>CGF1_MWP_Vehicle_AVGPGrizzly_Blueprint</buildDef>
+		
+		<statBases>
+			<MarketValue>5000</MarketValue>
+		</statBases>
+		
+		<vehicleStats>
+			<Mass>475</Mass>
+			<CargoCapacity>175</CargoCapacity>
+		</vehicleStats>
+		
+		<properties>
+			<roles>
+				<li>
+					<key>driver</key>
+					<label>Driver</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					
+					<handlingTypes>
+						<li>Movement</li>
+					</handlingTypes>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 2)</li>
+						</cells>
+					</hitbox>
+				</li>
+				<li>
+					<key>gunner</key>
+					<label>Gunner</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>		
+					
+					<handlingTypes>Turret</handlingTypes>
+					
+					<turretIds>
+						<li>mainTurret</li>
+						<li>coaxialMG</li>
+					</turretIds>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 1)</li>
+						</cells>
+					</hitbox>
+				</li>
+				<li>
+					<key>commander</key>
+					<label>Commander</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					
+					<handlingTypes>Turret</handlingTypes>
+					
+					<turretIds>
+						<li>commanderTurret</li>
+					</turretIds>
+					
+					<hitbox>
+						<cells>
+							<li>(-1, -1)</li>
+						</cells>
+					</hitbox>
+				</li>
+				<li>
+					<key>passenger</key>
+					<label>Passenger</label>
+					<slots>6</slots>
+				</li>
+			</roles>
+		</properties>
+		
+		<comps>
+			<li Class="Vehicles.CompProperties_UpgradeTree">
+				<def>CGF1_MWP_Vehicle_AVGPGrizzly_UpgradeTree</def>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
+				<turrets>
+					<li>
+						<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+						
+						<renderProperties>
+							<north>(-0.2, 0.0)</north>
+							<south>(0.25, 1.15)</south>
+							<east>(-0.85, 0.90)</east>
+						</renderProperties>
+						<drawLayer>3</drawLayer>
+						
+						<gizmoLabel>M2HB</gizmoLabel>
+						
+						<angleRestricted/>
+						<aimPieOffset>(0, 0.2)</aimPieOffset>
+						
+						<key>mainTurret</key>
+					</li>
+					<li>
+						<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
+						
+						<renderProperties>
+							<north>(-0.28,0.7)</north>
+						</renderProperties>
+						<drawLayer>4</drawLayer>
+						
+						<gizmoLabel>C5A1</gizmoLabel>
+						
+						<angleRestricted>(345, 15)</angleRestricted>
+						<aimPieOffset>(0, -0.1)</aimPieOffset>
+						
+						<key>coaxialMG</key>
+						<parentKey>mainTurret</parentKey>
+					</li>
+				</turrets>
+			</li>
+		</comps>
+	</Vehicles.VehicleDef>
+</Defs>

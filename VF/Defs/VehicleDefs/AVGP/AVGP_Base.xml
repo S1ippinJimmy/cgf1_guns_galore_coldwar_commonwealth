@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>	
-	<Vehicles.VehicleDef ParentName="CGF1_MWP_VehiclePawn_Armor">
-		<defName>CGF1_MWP_Vehicle_AVGPCougar</defName>
-		<label>AVGP Cougar</label>
-		<description>A tracked, armored Canadian vehicle based originally on the Swiss Mowag Piranha.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunnner x1, Commander x1, Passenger x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		
-		<graphicData>
-			<texPath>CGF1/Vehicle/AVGP/AVGPCougar</texPath>
-			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(2.92, 6.8)</drawSize>
-			<color>(140, 150, 100)</color>
-			<colorTwo>(70, 35, 50)</colorTwo>
-			<colorThree>(100, 69, 59)</colorThree>
-		</graphicData>
-		
+	<Vehicles.VehicleDef Name="CGF1_MWP_Vehicle_AVGP_Base" ParentName="CGF1_MWP_VehiclePawn_Armor" Abstract="True">
+	
 		<fillPercent>1</fillPercent>
-		
-		<buildDef>CGF1_MWP_Vehicle_AVGPCougar_Blueprint</buildDef>
 		
 		<size>(3, 6)</size>
 		
@@ -31,13 +16,10 @@
 			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
 			<Flammability>0.5</Flammability>
-			<MarketValue>5000</MarketValue>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>480</Mass>
 			<MoveSpeed>7.8</MoveSpeed>
-			<CargoCapacity>165</CargoCapacity>
 			<RepairRate>0.3</RepairRate>
 			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.09</AccelerationRate>
 		</vehicleStats>
@@ -61,67 +43,6 @@
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 3)</li>
 			</vehicleJobLimitations>
-			
-			<roles>
-				<li>
-					<key>driver</key>
-					<label>Driver</label>
-					<slots>1</slots>
-					<slotsToOperate>1</slotsToOperate>
-					
-					<handlingTypes>
-						<li>Movement</li>
-					</handlingTypes>
-					
-					<hitbox>
-						<cells>
-							<li>(0, 2)</li>
-						</cells>
-					</hitbox>
-				</li>
-				<li>
-					<key>gunner</key>
-					<label>Gunner</label>
-					<slots>1</slots>
-					<slotsToOperate>1</slotsToOperate>		
-					
-					<handlingTypes>Turret</handlingTypes>
-					
-					<turretIds>
-						<li>mainTurret</li>
-						<li>coaxialMG</li>
-					</turretIds>
-					
-					<hitbox>
-						<cells>
-							<li>(0, 1)</li>
-						</cells>
-					</hitbox>
-				</li>
-				<li>
-					<key>commander</key>
-					<label>Commander</label>
-					<slots>1</slots>
-					<slotsToOperate>1</slotsToOperate>
-					
-					<handlingTypes>Turret</handlingTypes>
-					
-					<turretIds>
-						<li>commanderTurret</li>
-					</turretIds>
-					
-					<hitbox>
-						<cells>
-							<li>(-1, -1)</li>
-						</cells>
-					</hitbox>
-				</li>
-				<li>
-					<key>passenger</key>
-					<label>Passenger</label>
-					<slots>2</slots>
-				</li>
-			</roles>
 		</properties>
 		
 		<components>
@@ -535,55 +456,5 @@
 				</armor>
 			</li>
 		</components>
-		
-		<comps>
-			<li Class="Vehicles.CompProperties_FueledTravel">
-				<fuelType>Chemfuel</fuelType>
-				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>28</fuelConsumptionRate>
-				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
-				<fuelCapacity>85</fuelCapacity>
-			</li>
-			<li Class = "Vehicles.CompProperties_UpgradeTree">
-				<def>CGF1_MWP_Vehicle_AVGPCougar_UpgradeTree</def>
-			</li>
-			<li Class="Vehicles.CompProperties_VehicleTurrets">
-				<turrets>
-					<li>
-						<turretDef>CGF1_MWP_Vehicle_TurretGun_76mm_L23A1_AVGP</turretDef>
-						
-						<renderProperties>
-							<north>(-0.1, -0.3)</north>
-							<south>(0.1, 1.15)</south>
-							<east>(-1.12, 0.82)</east>
-						</renderProperties>
-						<drawLayer>2</drawLayer>
-						
-						<gizmoLabel>76mm L23A1</gizmoLabel>
-						
-						<angleRestricted/>
-						<aimPieOffset>(0, 2)</aimPieOffset>
-						
-						<key>mainTurret</key>
-					</li>
-					<li>
-						<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
-						
-						<renderProperties>
-							<north>(-0.21,0.85)</north>
-						</renderProperties>
-						<drawLayer>3</drawLayer>
-						
-						<gizmoLabel>C5A1</gizmoLabel>
-						
-						<angleRestricted>(345, 15)</angleRestricted>
-						<aimPieOffset>(0, 0.05</aimPieOffset>
-						
-						<key>coaxialMG</key>
-						<parentKey>mainTurret</parentKey>
-					</li>
-				</turrets>
-			</li>
-		</comps>
 	</Vehicles.VehicleDef>
 </Defs>

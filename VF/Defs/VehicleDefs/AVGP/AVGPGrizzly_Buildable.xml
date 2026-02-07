@@ -2,20 +2,20 @@
 
 <Defs>
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
-		<defName>CGF1_MWP_Vehicle_AVGPCougar_Blueprint</defName>
-		<label>AVGP Cougar</label>
-		<description>A tracked, armored Canadian vehicle based originally on the Swiss Mowag Piranha.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunnner x1, Commander x1, Passenger x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<defName>CGF1_MWP_Vehicle_AVGPGrizzly_Blueprint</defName>
+		<label>AVGP Grizzly</label>
+		<description>A tracked, armored Canadian vehicle based originally on the Swiss Mowag Piranha.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunnner x1, Commander x1, Passenger x6\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<designationCategory>VF_Vehicles</designationCategory>
 		
 		<graphicData>
-			<texPath>CGF1/Vehicle/AVGP/AVGPCougar</texPath>
+			<texPath>CGF1/Vehicle/AVGP/AVGP</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.92, 6.8)</drawSize>
 		</graphicData>
 		
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>15000</WorkToBuild>
+			<WorkToBuild>14500</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
 		
@@ -27,12 +27,12 @@
 		
 		<costList>
 			<Steel>450</Steel>
-			<ComponentIndustrial>14</ComponentIndustrial>
+			<ComponentIndustrial>12</ComponentIndustrial>
 		</costList>
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		
-		<thingToSpawn>CGF1_MWP_Vehicle_AVGPCougar</thingToSpawn>
+		<thingToSpawn>CGF1_MWP_Vehicle_AVGPGrizzly</thingToSpawn>
 		
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</Vehicles.VehicleBuildDef>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.UpgradeTreeDef>
+		<defName>CGF1_MWP_Vehicle_AVGPGrizzly_UpgradeTree</defName>
+		 
+		<nodes>
+			
+			<li>
+				<key>Armor_Wheel</key>
+				<label>Install wheel armor.</label>
+				<description>Install wheel armor to increase the protection of the vehicle's wheels. Slightly reduces acceleration.</description>
+				
+				<icon>CGF1/Vehicle/AVGP/Upgrade_WheelArmor_Icon</icon>
+				
+				<work>4000</work>
+				
+				<gridCoordinate>(24, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<armor>
+							<li>
+								<key>FirstLeftWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>SecondLeftWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>ThirdLeftWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>FirstRightWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>SecondRightWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>ThirdRightWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+						</armor>
+						<health>
+							<li>
+								<key>FirstLeftWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>SecondLeftWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>ThirdLeftWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>FirstRightWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>SecondRightWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>ThirdRightWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>FrontLeftDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>FrontRightDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>BackLeftDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>BackRightDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+						</health>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>AccelerationRate</def>
+								<value>-0.01</value>
+							</li>
+							<li>
+								<def>Mass</def>
+								<value>5</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>100</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/AVGP/Upgrade_WheelArmor</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(2.92,6.8)</drawSize>
+							<layer>1</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			
+			<li>
+				<key>Storage_Crates</key>
+				<label>Install storage crates.</label>
+				<description>Install crates alongside the outside of the vehicle to increase its storage capacity.</description>
+				
+				<icon>CGF1/Vehicle/AVGP/Upgrade_Storage_Icon</icon>
+				
+				<work>2000</work>
+				
+				<gridCoordinate>(24, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>CargoCapacity</def>
+								<value>100</value>
+							</li>
+							<li>
+								<def>Mass</def>
+								<value>10</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>25</Steel>
+					<WoodLog>75</WoodLog>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/AVGP/Upgrade_Storage</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(2.92,6.8)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+		
+			<!-- Main Guns -->
+			
+			<li>
+				<key>MainTurret_Removed</key>
+				<label>Remove main turret</label>
+				<description>Remove the main turret and its armament from the vehicle. Reduces mass.</description>
+				
+				<icon>CGF1/Vehicle/AVGP/AVGP_east</icon>
+				
+				<work>2500</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_MAG</li>
+					<li>MainTurret_Twin30</li>
+					<li>MainTurret_Twin50</li>
+					<li>MainTurret_Mk19</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+						</removeTurrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>-75</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+			</li>
+			<li>
+				<key>MainTurret_MAG</key>
+				<label>Turret: M2HB + C6</label>
+				<description>Swap the armament of the Cadillac Gage One Metre turret to an M2HB 12.7mm machine gun and a C6 (FN MAG) 7.62mm machine gun. Requires steel to refurbish.\n\nThis represents the late weapon configuration of the Grizzly (which swapped the older M1919 for an FN MAG series machine gun.)</description>
+				
+				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_MAG</icon>
+				
+				<work>7500</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>MainTurret_Twin30</li>
+					<li>MainTurret_Twin50</li>
+					<li>MainTurret_Mk19</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+								
+								<renderProperties>
+									<north>(-0.2, 0.0)</north>
+									<south>(0.25, 1.15)</south>
+									<east>(-0.85, 0.90)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.2)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_C6_Coaxial_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.28,0.7)</north>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+								
+								<gizmoLabel>C5A1</gizmoLabel>
+								
+								<angleRestricted>(345, 15)</angleRestricted>
+								<aimPieOffset>(0, -0.1)</aimPieOffset>
+								
+								<key>coaxialMG</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>90</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>MainTurret_Twin30</key>
+				<label>Turret: C5A1 + C5A1</label>
+				<description>Swap the armament of the Cadillac Gage One Metre turret to use twin C5A1 (M1919) 7.62mm machine guns. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_TwinM1919</icon>
+				
+				<work>8000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>MainTurret_MAG</li>
+					<li>MainTurret_Twin50</li>
+					<li>MainTurret_Mk19</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 7)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+								
+								<renderProperties>
+									<north>(-0.2, 0.0)</north>
+									<south>(0.25, 1.15)</south>
+									<east>(-0.85, 0.90)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.2)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.28,0.7)</north>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+								
+								<gizmoLabel>C5A1</gizmoLabel>
+								
+								<angleRestricted>(345, 15)</angleRestricted>
+								<aimPieOffset>(0, -0.1)</aimPieOffset>
+								
+								<key>coaxialMG</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>100</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>MainTurret_Twin50</key>
+				<label>Turret: M2HB + M2HB</label>
+				<description>Swap the armament of the Cadillac Gage One Metre turret to use twin M2HB 12.7mm machine guns. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_TwinM2HB</icon>
+				
+				<work>10000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>MainTurret_MAG</li>
+					<li>MainTurret_Twin30</li>
+					<li>MainTurret_Mk19</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 10)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+								
+								<renderProperties>
+									<north>(-0.2, 0.0)</north>
+									<south>(0.25, 1.15)</south>
+									<east>(-0.85, 0.90)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.2)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.28,0.7)</north>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+								
+								<gizmoLabel>C5A1</gizmoLabel>
+								
+								<angleRestricted>(345, 15)</angleRestricted>
+								<aimPieOffset>(0, -0.1)</aimPieOffset>
+								
+								<key>coaxialMG</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>125</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>MainTurret_Mk19</key>
+				<label>Turret: M2HB + Mk.19</label>
+				<description>Swap the armament of the Cadillac Gage One Metre turret to an M2HB 12.7mm machine gun and an Mk.19 40mm grenade launcher. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_Mk19</icon>
+				
+				<work>10000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>MainTurret_MAG</li>
+					<li>MainTurret_Twin30</li>
+					<li>MainTurret_Twin50</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 13)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+								
+								<renderProperties>
+									<north>(-0.2, 0.0)</north>
+									<south>(0.25, 1.15)</south>
+									<east>(-0.85, 0.90)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.2)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.28,0.7)</north>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+								
+								<gizmoLabel>C5A1</gizmoLabel>
+								
+								<angleRestricted>(345, 15)</angleRestricted>
+								<aimPieOffset>(0, -0.1)</aimPieOffset>
+								
+								<key>coaxialMG</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>150</Steel>
+					<ComponentIndustrial>3</ComponentIndustrial>
+				</ingredients>
+			</li>
+			
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+</Defs>

@@ -6,6 +6,247 @@
 		 
 		<nodes>
 		
+			<!-- Armor -->
+			
+			<!--<li>
+				<key>Armor_Side</key>
+				<label>Install side armor.</label>
+				<description>Install side armor to increase the protection of the vehicle's left and right armor plating. Increases mass.</description>
+				
+				<icon>CGF1/Vehicle/AVGP/Upgrade_Armor_east</icon>
+				
+				<work>6000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_90mmCockerillMk3MA1</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(24, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<armor>
+							<li>
+								<key>LeftArmorPlating</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>RightArmorPlating</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+						</armor>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>50</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>220</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/AVGP/Upgrade_Armor</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(2.92,6.8)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>-->
+			
+			<li>
+				<key>Armor_Wheel</key>
+				<label>Install wheel armor.</label>
+				<description>Install wheel armor to increase the protection of the vehicle's wheels. Slightly reduces acceleration.</description>
+				
+				<icon>CGF1/Vehicle/AVGP/Upgrade_WheelArmor_Icon</icon>
+				
+				<work>4000</work>
+				
+				<gridCoordinate>(24, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<armor>
+							<li>
+								<key>FirstLeftWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>SecondLeftWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>ThirdLeftWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>FirstRightWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>SecondRightWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+							<li>
+								<key>ThirdRightWheel</key>
+								<statModifiers>
+									<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+									<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+								</statModifiers>
+							</li>
+						</armor>
+						<health>
+							<li>
+								<key>FirstLeftWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>SecondLeftWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>ThirdLeftWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>FirstRightWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>SecondRightWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>ThirdRightWheel</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>FrontLeftDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>FrontRightDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>BackLeftDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+							<li>
+								<key>BackRightDriveSprocket</key>
+								<depth>Internal</depth>
+							</li>
+						</health>
+					</li>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>AccelerationRate</def>
+								<value>-0.01</value>
+							</li>
+							<li>
+								<def>Mass</def>
+								<value>5</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>100</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/AVGP/Upgrade_WheelArmor</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(2.92,6.8)</drawSize>
+							<layer>1</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			
+			<li>
+				<key>Storage_Crates</key>
+				<label>Install storage crates.</label>
+				<description>Install crates alongside the outside of the vehicle to increase its storage capacity.</description>
+				
+				<icon>CGF1/Vehicle/AVGP/Upgrade_Storage_Icon</icon>
+				
+				<work>2000</work>
+				
+				<gridCoordinate>(24, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>CargoCapacity</def>
+								<value>100</value>
+							</li>
+							<li>
+								<def>Mass</def>
+								<value>10</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				
+				<ingredients>
+					<Steel>25</Steel>
+					<WoodLog>75</WoodLog>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/AVGP/Upgrade_Storage</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(2.92,6.8)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+		
 			<!-- Main Guns -->
 			
 			<li>
@@ -13,13 +254,14 @@
 				<label>Remove main turret</label>
 				<description>Remove the main turret and its armament from the vehicle. Reduces mass.</description>
 				
-				<icon>CGF1/Vehicle/AVGP/AVGPCougar_east</icon>
+				<icon>CGF1/Vehicle/AVGP/AVGP_east</icon>
 				
 				<work>2500</work>
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_90mmCockerillMk3MA1</li>
 					<li>MainTurret_30mmL21RARDEN</li>
+					<li>Pintle_C9</li>
 					<li>Pintle_C5A1</li>
 					<li>Pintle_C6</li>
 					<li>Pintle_M2HB</li>
@@ -66,7 +308,8 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
 					<li>MainTurret_30mmL21RARDEN</li>
-					<li>Pintle_C5A1</li> <!-- Disabled one-way due to a VF bug -->
+					<li>Pintle_C9</li> <!-- Disabled one-way due to a VF bug -->
+					<li>Pintle_C5A1</li>
 					<li>Pintle_C6</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
@@ -85,7 +328,7 @@
 									<south>(0.1, 1.15)</south>
 									<east>(-1.12, 0.82)</east>
 								</renderProperties>
-								<drawLayer>2</drawLayer>
+								<drawLayer>3</drawLayer>
 
 								<gizmoLabel>90mm Mk3 M-A1</gizmoLabel>
 								
@@ -100,7 +343,7 @@
 								<renderProperties>
 									<north>(-0.21,0.85)</north>
 								</renderProperties>
-								<drawLayer>3</drawLayer>
+								<drawLayer>4</drawLayer>
 								
 								<gizmoLabel>C5A1</gizmoLabel>
 								
@@ -143,7 +386,8 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
 					<li>MainTurret_90mmCockerillMk3MA1</li>
-					<li>Pintle_C5A1</li> <!-- Disabled one-way due to a VF bug -->
+					<li>Pintle_C9</li> <!-- Disabled one-way due to a VF bug -->
+					<li>Pintle_C5A1</li>
 					<li>Pintle_C6</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
@@ -162,7 +406,7 @@
 									<south>(0.1, 1.15)</south>
 									<east>(-1.12, 0.82)</east>
 								</renderProperties>
-								<drawLayer>2</drawLayer>
+								<drawLayer>3</drawLayer>
 
 								<gizmoLabel>30mm L21 RARDEN</gizmoLabel>
 								
@@ -177,7 +421,7 @@
 								<renderProperties>
 									<north>(-0.21,0.85)</north>
 								</renderProperties>
-								<drawLayer>3</drawLayer>
+								<drawLayer>4</drawLayer>
 								
 								<gizmoLabel>C5A1</gizmoLabel>
 								
@@ -210,18 +454,18 @@
 			</li>
 			
 			<!-- Roof Guns -->
-			
 			<li>
-				<key>Pintle_C5A1</key>
-				<label>Pintle: C5A1</label>
-				<description>Install a C5A1 MMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				<key>Pintle_C9</key>
+				<label>Pintle: C9</label>
+				<description>Install a C9 LMG on the roof of the vehicle. Requires steel to refurbish.</description>
 				
-				<icon>CGF1/Vehicle/Turret/Coax/Browning_M1919A4</icon>
+				<icon>CGF1/Gun/C9</icon>
 				
 				<work>7000</work>
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
+					<li>Pintle_C5A1</li>
 					<li>Pintle_C6</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
@@ -233,12 +477,60 @@
 					<li Class="Vehicles.TurretUpgrade">
 						<turrets>
 							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_C9_Small_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.3, 0.2)</north>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+
+								<gizmoLabel>C9</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.3)</aimPieOffset>
+								<!--<defaultAngleRotated>270</defaultAngleRotated>-->
+								
+								<key>commanderTurret</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>85</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>Pintle_C5A1</key>
+				<label>Pintle: C5A1</label>
+				<description>Install a C5A1 MMG on the roof of the vehicle. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/Coax/Browning_M1919A4</icon>
+				
+				<work>7000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>Pintle_C9</li>
+					<li>Pintle_C6</li>
+					<li>Pintle_M2HB</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(30, 4)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
 								<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Medium_</turretDef>
 								
 								<renderProperties>
 									<north>(-0.2, 0.5)</north>
 								</renderProperties>
-								<drawLayer>3</drawLayer>
+								<drawLayer>4</drawLayer>
 
 								<gizmoLabel>C5A1</gizmoLabel>
 								
@@ -269,11 +561,12 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
+					<li>Pintle_C9</li>
 					<li>Pintle_C5A1</li>
 					<li>Pintle_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
 				
-				<gridCoordinate>(30, 4)</gridCoordinate>
+				<gridCoordinate>(30, 7)</gridCoordinate>
 				<drawSize>(50, 50)</drawSize>
 				
 				<upgrades>
@@ -285,7 +578,7 @@
 								<renderProperties>
 									<north>(-0.3, 0.2)</north>
 								</renderProperties>
-								<drawLayer>3</drawLayer>
+								<drawLayer>4</drawLayer>
 
 								<gizmoLabel>C6</gizmoLabel>
 								
@@ -316,11 +609,12 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
+					<li>Pintle_C9</li>
 					<li>Pintle_C5A1</li>
 					<li>Pintle_C6</li>
 				</disableIfUpgradeNodesEnabled>
 				
-				<gridCoordinate>(30, 7)</gridCoordinate>
+				<gridCoordinate>(30, 10)</gridCoordinate>
 				<drawSize>(50, 50)</drawSize>
 				
 				<upgrades>
@@ -332,7 +626,7 @@
 								<renderProperties>
 									<north>(-0.3, 0.2)</north>
 								</renderProperties>
-								<drawLayer>3</drawLayer>
+								<drawLayer>4</drawLayer>
 
 								<gizmoLabel>M2HB</gizmoLabel>
 								
