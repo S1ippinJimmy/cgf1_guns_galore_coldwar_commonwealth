@@ -222,74 +222,6 @@
 				</upgrades>
 			</li>
 			<li>
-				<key>MainTurret_MAG</key>
-				<label>Turret: M2HB + C6</label>
-				<description>Swap the armament of the Cadillac Gage One Metre turret to an M2HB 12.7mm machine gun and a C6 (FN MAG) 7.62mm machine gun. Requires steel to refurbish.\n\nThis represents the late weapon configuration of the Grizzly (which swapped the older M1919 for an FN MAG series machine gun.)</description>
-				
-				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_MAG</icon>
-				
-				<work>7500</work>
-				
-				<disableIfUpgradeNodesEnabled>
-					<li>MainTurret_Removed</li>
-					<li>MainTurret_Twin30</li>
-					<li>MainTurret_Twin50</li>
-					<li>MainTurret_Mk19</li>
-				</disableIfUpgradeNodesEnabled>
-				
-				<gridCoordinate>(27, 4)</gridCoordinate>
-				<drawSize>(50, 50)</drawSize>
-				
-				<upgrades>
-					<li Class="Vehicles.TurretUpgrade">
-						<turrets>
-							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
-								
-								<renderProperties>
-									<north>(-0.2, 0.0)</north>
-									<south>(0.25, 1.15)</south>
-									<east>(-0.85, 0.90)</east>
-								</renderProperties>
-								<drawLayer>3</drawLayer>
-								
-								<gizmoLabel>M2HB</gizmoLabel>
-								
-								<angleRestricted/>
-								<aimPieOffset>(0, 0.2)</aimPieOffset>
-								
-								<key>mainTurret</key>
-							</li>
-							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_C6_Coaxial_</turretDef>
-								
-								<renderProperties>
-									<north>(-0.28,0.7)</north>
-								</renderProperties>
-								<drawLayer>4</drawLayer>
-								
-								<gizmoLabel>C5A1</gizmoLabel>
-								
-								<angleRestricted>(345, 15)</angleRestricted>
-								<aimPieOffset>(0, -0.1)</aimPieOffset>
-								
-								<key>coaxialMG</key>
-								<parentKey>mainTurret</parentKey>
-							</li>
-						</turrets>
-						<removeTurrets>
-							<li>mainTurret</li>
-							<li>coaxialMG</li>
-						</removeTurrets>
-					</li>
-				</upgrades>
-
-				<ingredients>
-					<Steel>90</Steel>
-					<ComponentIndustrial>2</ComponentIndustrial>
-				</ingredients>
-			</li>
-			<li>
 				<key>MainTurret_Twin30</key>
 				<label>Turret: C5A1 + C5A1</label>
 				<description>Swap the armament of the Cadillac Gage One Metre turret to use twin C5A1 (M1919) 7.62mm machine guns. Requires steel to refurbish.</description>
@@ -305,14 +237,14 @@
 					<li>MainTurret_Mk19</li>
 				</disableIfUpgradeNodesEnabled>
 				
-				<gridCoordinate>(27, 7)</gridCoordinate>
+				<gridCoordinate>(27, 4)</gridCoordinate>
 				<drawSize>(50, 50)</drawSize>
 				
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade">
 						<turrets>
 							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_TwinM1919_C5A1</turretDef>
 								
 								<renderProperties>
 									<north>(-0.2, 0.0)</north>
@@ -321,10 +253,10 @@
 								</renderProperties>
 								<drawLayer>3</drawLayer>
 								
-								<gizmoLabel>M2HB</gizmoLabel>
+								<gizmoLabel>C5A1</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, 0.2)</aimPieOffset>
+								<aimPieOffset>(0.3, 0.4)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
@@ -339,7 +271,7 @@
 								<gizmoLabel>C5A1</gizmoLabel>
 								
 								<angleRestricted>(345, 15)</angleRestricted>
-								<aimPieOffset>(0, -0.1)</aimPieOffset>
+								<aimPieOffset>(0.0, -0.3)</aimPieOffset>
 								
 								<key>coaxialMG</key>
 								<parentKey>mainTurret</parentKey>
@@ -358,29 +290,29 @@
 				</ingredients>
 			</li>
 			<li>
-				<key>MainTurret_Twin50</key>
-				<label>Turret: M2HB + M2HB</label>
-				<description>Swap the armament of the Cadillac Gage One Metre turret to use twin M2HB 12.7mm machine guns. Requires steel to refurbish.</description>
+				<key>MainTurret_MAG</key>
+				<label>Turret: M2HB + C6</label>
+				<description>Swap the armament of the Cadillac Gage One Metre turret to an M2HB 12.7mm machine gun and a C6 (FN MAG) 7.62mm machine gun. Requires steel to refurbish.\n\nThis represents the late weapon configuration of the Grizzly (which swapped the older M1919 for an FN MAG series machine gun.)</description>
 				
-				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_TwinM2HB</icon>
+				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_MAG</icon>
 				
-				<work>10000</work>
+				<work>7500</work>
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
-					<li>MainTurret_MAG</li>
 					<li>MainTurret_Twin30</li>
+					<li>MainTurret_Twin50</li>
 					<li>MainTurret_Mk19</li>
 				</disableIfUpgradeNodesEnabled>
 				
-				<gridCoordinate>(27, 10)</gridCoordinate>
+				<gridCoordinate>(27, 7)</gridCoordinate>
 				<drawSize>(50, 50)</drawSize>
 				
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade">
 						<turrets>
 							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_MAG</turretDef>
 								
 								<renderProperties>
 									<north>(-0.2, 0.0)</north>
@@ -392,22 +324,90 @@
 								<gizmoLabel>M2HB</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, 0.2)</aimPieOffset>
+								<aimPieOffset>(0.22, 0.65)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
 							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_C6_Coaxial_</turretDef>
 								
 								<renderProperties>
-									<north>(-0.28,0.7)</north>
+									<north>(-0.28,0.6)</north>
 								</renderProperties>
 								<drawLayer>4</drawLayer>
 								
-								<gizmoLabel>C5A1</gizmoLabel>
+								<gizmoLabel>C6</gizmoLabel>
 								
 								<angleRestricted>(345, 15)</angleRestricted>
-								<aimPieOffset>(0, -0.1)</aimPieOffset>
+								<aimPieOffset>(0.0, -0.3)</aimPieOffset>
+								
+								<key>coaxialMG</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+							<li>coaxialMG</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+
+				<ingredients>
+					<Steel>90</Steel>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>MainTurret_Twin50</key>
+				<label>Turret: M2HB + M2HB</label>
+				<description>Swap the armament of the Cadillac Gage One Metre turret to use twin M2HB 12.7mm machine guns. Requires steel to refurbish.</description>
+				
+				<icon>CGF1/Vehicle/Turret/CadillacGage1Metre_TwinM2HB</icon>
+				
+				<work>10000</work>
+				
+				<disableIfUpgradeNodesEnabled>
+					<li>MainTurret_Removed</li>
+					<li>MainTurret_Twin30</li>
+					<li>MainTurret_MAG</li>
+					<li>MainTurret_Mk19</li>
+				</disableIfUpgradeNodesEnabled>
+				
+				<gridCoordinate>(27, 10)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_TwinM2HB</turretDef>
+								
+								<renderProperties>
+									<north>(-0.2, 0.0)</north>
+									<south>(0.25, 1.15)</south>
+									<east>(-0.85, 0.90)</east>
+								</renderProperties>
+								<drawLayer>3</drawLayer>
+								
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted/>
+								<aimPieOffset>(0.22, 0.65)</aimPieOffset>
+								
+								<key>mainTurret</key>
+							</li>
+							<li>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_M2HB_Coaxial_</turretDef>
+								
+								<renderProperties>
+									<north>(-0.21,1.2)</north>
+								</renderProperties>
+								<drawLayer>4</drawLayer>
+								
+								<gizmoLabel>M2HB</gizmoLabel>
+								
+								<angleRestricted>(345, 15)</angleRestricted>
+								<aimPieOffset>(-0.01, -0.55)</aimPieOffset>
 								
 								<key>coaxialMG</key>
 								<parentKey>mainTurret</parentKey>
@@ -436,8 +436,8 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_Removed</li>
-					<li>MainTurret_MAG</li>
 					<li>MainTurret_Twin30</li>
+					<li>MainTurret_MAG</li>
 					<li>MainTurret_Twin50</li>
 				</disableIfUpgradeNodesEnabled>
 				
@@ -448,7 +448,7 @@
 					<li Class="Vehicles.TurretUpgrade">
 						<turrets>
 							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre</turretDef>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_Mk19</turretDef>
 								
 								<renderProperties>
 									<north>(-0.2, 0.0)</north>
@@ -460,22 +460,22 @@
 								<gizmoLabel>M2HB</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, 0.2)</aimPieOffset>
+								<aimPieOffset>(0.22, 0.65)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
 							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_C5A1_Coaxial_</turretDef>
+								<turretDef>CGF1_MWP_Vehicle_TurretGun_Mk19Mod3_Coaxial_</turretDef>
 								
 								<renderProperties>
 									<north>(-0.28,0.7)</north>
 								</renderProperties>
 								<drawLayer>4</drawLayer>
 								
-								<gizmoLabel>C5A1</gizmoLabel>
+								<gizmoLabel>Mk.19</gizmoLabel>
 								
 								<angleRestricted>(345, 15)</angleRestricted>
-								<aimPieOffset>(0, -0.1)</aimPieOffset>
+								<aimPieOffset>(0.0, -0.3)</aimPieOffset>
 								
 								<key>coaxialMG</key>
 								<parentKey>mainTurret</parentKey>

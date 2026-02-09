@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.UpgradeTreeDef>
+		<defName>CGF1_MWP_Vehicle_BristolBelvedere_UpgradeTree</defName>
+		 
+		<nodes>
+		
+			<li>
+				<key>FuelPylon</key>
+				<label>Install fuel pylon.</label>
+				<description>Install a pair of fuel pylons to extend the fuel capacity and travel range of the helicopter.</description>
+				
+				<icon>CGF1/Vehicle/BristolBelvedere/Upgrade_FuelPylon_east</icon>
+				
+				<work>4000</work>
+				
+				<gridCoordinate>(24, 1)</gridCoordinate>
+				<drawSize>(50, 50)</drawSize>
+				
+				<!--<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>AccelerationRate</def>
+								<value>-0.01</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>-->
+				
+				<ingredients>
+					<Steel>150</Steel>
+				</ingredients>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>CGF1/Vehicle/BristolBelvedere/Upgrade_FuelPylon</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawSize>(3.888,11)</drawSize>
+							<layer>1</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+		
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+</Defs>

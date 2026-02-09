@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CGF1_MWP_Vehicle_BristolBelvedere_Blueprint</defName>
+		<label>Bristol Belvedere</label>
+		<description>A twin-engine, tandem rotor cargo helicopter. It was Britain's only tandem rotor helicopter to enter major production, and it had a relatively brief service career (from 1961 to 1969) where it was used as a troop transport and heavy lift aircraft.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x2, Passenger x18\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/BristolBelvedere/BristolBelvedere</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.23, 12)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>45000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(3, 10)</size>
+		
+		<researchPrerequisites>
+			<li>CGF1_MWP_Research_T8_AtomicAgeFirearms</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>900</Steel>
+			<ComponentIndustrial>32</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>CGF1_MWP_Vehicle_BristolBelvedere_</thingToSpawn>
+		
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>
