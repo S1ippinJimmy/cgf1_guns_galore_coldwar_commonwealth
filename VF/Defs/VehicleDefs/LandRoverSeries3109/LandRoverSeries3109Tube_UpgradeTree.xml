@@ -2,7 +2,7 @@
 
 <Defs>
 	<Vehicles.UpgradeTreeDef>
-		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109_UpgradeTree</defName>
+		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_UpgradeTree</defName>
 		 
 		<nodes>
 			<li>
@@ -16,10 +16,8 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_L3A4</li>
-					<li>MainTurret_Mk19</li>
 					<li>MainTurret_M2HB</li>
-					<li>MainTurret_L6WOMBAT</li>
-					<li>MainTurret_81mmL16_Mortar</li>
+					<li>MainTurret_Mk19</li>
 				</disableIfUpgradeNodesEnabled>
 				
 				<gridCoordinate>(30, 1)</gridCoordinate>
@@ -46,7 +44,7 @@
 									<layerNorth>18</layerNorth>
 									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
 									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
-									<drawOffsetEast>(-1.4, 0, 0.5)</drawOffsetEast>
+									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>
 						</roles>
@@ -59,13 +57,13 @@
 								<renderProperties>
 									<north>(0.01, -0.18)</north>
 									<south>(0, 1.53)</south>
-									<east>(-0.83, 0.58)</east>
+									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
 
 								<gizmoLabel>L7A1</gizmoLabel>
 								
-								<angleRestricted/>
+								<angleRestricted>(335, 25)</angleRestricted>
 								<aimPieOffset>(0, 0.5)</aimPieOffset>
 								
 								<key>mainTurret</key>
@@ -73,18 +71,6 @@
 						</turrets>
 					</li>
 				</upgrades>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>CGF1/Vehicle/LandRoverSeries3109/GunStand</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3.3,4.4)</drawSize>
-							<layer>10</layer>
-							<shaderType>Cutout</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
 
 				<ingredients>
 					<Steel>85</Steel>
@@ -102,10 +88,8 @@
 				
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_L7A1</li>
-					<li>MainTurret_Mk19</li>
 					<li>MainTurret_M2HB</li>
-					<li>MainTurret_L6WOMBAT</li>
-					<li>MainTurret_81mmL16_Mortar</li>
+					<li>MainTurret_Mk19</li>
 				</disableIfUpgradeNodesEnabled>
 				
 				<gridCoordinate>(30, 4)</gridCoordinate>
@@ -132,7 +116,7 @@
 									<layerNorth>18</layerNorth>
 									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
 									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
-									<drawOffsetEast>(-1.4, 0, 0.5)</drawOffsetEast>
+									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>
 						</roles>
@@ -145,13 +129,13 @@
 								<renderProperties>
 									<north>(0.01, -0.18)</north>
 									<south>(0, 1.53)</south>
-									<east>(-0.83, 0.58)</east>
+									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
 
 								<gizmoLabel>L3A4</gizmoLabel>
 								
-								<angleRestricted/>
+								<angleRestricted>(335, 25)</angleRestricted>
 								<aimPieOffset>(0, 0.3)</aimPieOffset>
 								
 								<key>mainTurret</key>
@@ -159,18 +143,6 @@
 						</turrets>
 					</li>
 				</upgrades>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>CGF1/Vehicle/LandRoverSeries3109/GunStand</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3.3,4.4)</drawSize>
-							<layer>10</layer>
-							<shaderType>Cutout</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
 
 				<ingredients>
 					<Steel>90</Steel>
@@ -190,8 +162,6 @@
 					<li>MainTurret_L7A1</li>
 					<li>MainTurret_L3A4</li>
 					<li>MainTurret_Mk19</li>
-					<li>MainTurret_L6WOMBAT</li>
-					<li>MainTurret_81mmL16_Mortar</li>
 				</disableIfUpgradeNodesEnabled>
 				
 				<gridCoordinate>(30, 7)</gridCoordinate>
@@ -218,7 +188,7 @@
 									<layerNorth>18</layerNorth>
 									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
 									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
-									<drawOffsetEast>(-1.4, 0, 0.5)</drawOffsetEast>
+									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>
 						</roles>
@@ -231,32 +201,20 @@
 								<renderProperties>
 									<north>(0.01, -0.18)</north>
 									<south>(0, 1.53)</south>
-									<east>(-0.83, 0.58)</east>
+									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
 
 								<gizmoLabel>M2HB</gizmoLabel>
 								
-								<angleRestricted/>
-								<aimPieOffset>(0, 0.7)</aimPieOffset>
+								<angleRestricted>(335, 25)</angleRestricted>
+								<aimPieOffset>(0, 0.4)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
 						</turrets>
 					</li>
 				</upgrades>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>CGF1/Vehicle/LandRoverSeries3109/GunStand</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3.3,4.4)</drawSize>
-							<layer>10</layer>
-							<shaderType>Cutout</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
 
 				<ingredients>
 					<Steel>120</Steel>
@@ -266,7 +224,7 @@
 			<li>
 				<key>MainTurret_Mk19</key>
 				<label>Main Turret: Mk.19 Mod 3</label>
-				<description>Install an Mk.19 40mm grenade launcher on the rear bed of the vehicle. Requires steel to refurbish.</description>
+				<description>Install an Mk.19 40mm grenade launcher on the frame of the vehicle. Requires steel to refurbish.</description>
 				
 				<icon>CGF1/Vehicle/Turret/Coax/Mk19_Mod3</icon>
 				
@@ -275,8 +233,7 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>MainTurret_L7A1</li>
 					<li>MainTurret_L3A4</li>
-					<li>MainTurret_L6WOMBAT</li>
-					<li>MainTurret_81mmL16_Mortar</li>
+					<li>MainTurret_M2HB</li>
 				</disableIfUpgradeNodesEnabled>
 				
 				<gridCoordinate>(30, 10)</gridCoordinate>
@@ -303,7 +260,7 @@
 									<layerNorth>18</layerNorth>
 									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
 									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
-									<drawOffsetEast>(-1.4, 0, 0.5)</drawOffsetEast>
+									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>
 						</roles>
@@ -316,202 +273,24 @@
 								<renderProperties>
 									<north>(0.01, -0.18)</north>
 									<south>(0, 1.53)</south>
-									<east>(-0.83, 0.58)</east>
+									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
 
 								<gizmoLabel>Mk.19</gizmoLabel>
 								
-								<angleRestricted/>
-								<aimPieOffset>(0, 0.7)</aimPieOffset>
+								<angleRestricted>(335, 25)</angleRestricted>
+								<aimPieOffset>(0, 0.4)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
 						</turrets>
 					</li>
 				</upgrades>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>CGF1/Vehicle/LandRoverSeries3109/GunStand</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3.3,4.4)</drawSize>
-							<layer>10</layer>
-							<shaderType>Cutout</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
 
 				<ingredients>
 					<Steel>150</Steel>
 					<ComponentIndustrial>3</ComponentIndustrial>
-				</ingredients>
-			</li>
-			<li>
-				<key>MainTurret_L6WOMBAT</key>
-				<label>Main Turret: L6 WOMBAT</label>
-				<description>Install an L6 WOMBAT recoilless rifle on the rear roof of the vehicle. Requires steel to refurbish.</description>
-				
-				<icon>CGF1/Vehicle/Turret/Coax/L6_Wombat</icon>
-				
-				<work>10000</work>
-				
-				<disableIfUpgradeNodesEnabled>
-					<li>MainTurret_L7A1</li>
-					<li>MainTurret_L3A4</li>
-					<li>MainTurret_M2HB</li>
-					<li>MainTurret_Mk19</li>
-					<li>MainTurret_81mmL16_Mortar</li>
-				</disableIfUpgradeNodesEnabled>
-				
-				<gridCoordinate>(30, 13)</gridCoordinate>
-				<drawSize>(50, 50)</drawSize>
-				
-				<upgrades>
-					<li Class = "Vehicles.VehicleUpgrade">
-						<roles>
-							<li> <!-- Adding a new role named Gunner -->
-								<key>gunner</key>
-								<label>Gunner</label>
-							   
-								<slots>1</slots>
-								<slotsToOperate>1</slotsToOperate>
-							   
-								<handlingTypes>Turret</handlingTypes>
-
-								<turretIds>
-									<li>mainTurret</li>
-								</turretIds>
-								
-								<pawnRenderer>
-									<layer>11</layer>
-									<drawOffsetNorth>(0.37, 0, -1.1)</drawOffsetNorth>
-									<drawOffsetSouth>(-0.38, 0, 1.8)</drawOffsetSouth>
-									<drawOffsetEast>(-1.5, 0, 0.5)</drawOffsetEast>
-								</pawnRenderer>
-							</li>
-						</roles>
-					</li>
-					<li Class="Vehicles.TurretUpgrade">
-						<turrets>
-							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_L6WOMBAT_</turretDef>
-								
-								<renderProperties>
-									<north>(0, -0.9)</north>
-									<south>(0, 1.2)</south>
-									<east>(-1.1, 0.15)</east>
-								</renderProperties>
-								<drawLayer>40</drawLayer>
-
-								<gizmoLabel>L6 WOMBAT</gizmoLabel>
-								
-								<angleRestricted/>
-								<aimPieOffset>(0, 0.5)</aimPieOffset>
-								
-								<key>mainTurret</key>
-							</li>
-						</turrets>
-					</li>
-				</upgrades>
-				
-				<graphicOverlays>
-					<li>
-						<graphicData>
-							<texPath>CGF1/Vehicle/LandRoverSeries3109/L6WOMBAT</texPath>
-							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-							<drawSize>(3.3,4.4)</drawSize>
-							<layer>10</layer>
-							<shaderType>Cutout</shaderType>
-						</graphicData>
-					</li>
-				</graphicOverlays>
-
-				<ingredients>
-					<Steel>150</Steel>
-					<ComponentIndustrial>4</ComponentIndustrial>
-				</ingredients>
-			</li>
-			<li>
-				<key>MainTurret_81mmL16_Mortar</key>
-				<label>81mm L16 Mortar</label>
-				<description>Install an 81mm L16 Mortar in the rear of the vehicle. Requires steel to refurbish.</description>
-				
-				<icon>CGF1/Building/L16_Mortar/L16_Mortar_MenuIcon</icon>
-				
-				<work>15000</work>
-				
-				<disableIfUpgradeNodesEnabled>
-					<li>MainTurret_L7A1</li>
-					<li>MainTurret_L3A4</li>
-					<li>MainTurret_M2HB</li>
-					<li>MainTurret_Mk19</li>
-					<li>MainTurret_L6WOMBAT</li>
-				</disableIfUpgradeNodesEnabled>
-				
-				<gridCoordinate>(30, 16)</gridCoordinate>
-				<drawSize>(50, 50)</drawSize>
-				
-				<upgrades>
-					<li Class = "Vehicles.VehicleUpgrade">
-						<roles>
-							<li> <!-- Adding a new role named Gunner -->
-								<key>gunner</key>
-								<label>Gunner</label>
-							   
-								<slots>1</slots>
-								<slotsToOperate>1</slotsToOperate>
-							   
-								<handlingTypes>Turret</handlingTypes>
-
-								<turretIds>
-									<li>mainTurret</li>
-								</turretIds>
-								
-								<pawnRenderer>
-									<layer>12</layer>
-									<drawOffsetNorth>(0.37, 0, -1.1)</drawOffsetNorth>
-									<drawOffsetSouth>(-0.38, 0, 1.8)</drawOffsetSouth>
-									<drawOffsetEast>(-1.6, 0, 0.5)</drawOffsetEast>
-								</pawnRenderer>
-							</li>
-						</roles>
-					</li>
-					<li Class="Vehicles.TurretUpgrade">
-						<turrets>
-							<li>
-								<turretDef>CGF1_MWP_Vehicle_TurretGun_81mm_L16P</turretDef>
-								
-								<renderProperties>
-									<north>(0, -0.8)</north>
-									<south>(0, 1.4)</south>
-									<east>(-1.05, 0.3)</east>
-								</renderProperties>
-								<drawLayer>11</drawLayer>
-
-								<gizmoLabel>81mm Mortar</gizmoLabel>
-								
-								<angleRestricted>(345, 15)</angleRestricted>
-								<aimPieOffset>(0, 0)</aimPieOffset>
-								
-								<key>mainTurret</key>
-							</li>
-						</turrets>
-					</li>
-					<li Class = "Vehicles.StatUpgrade">
-						<vehicleStats>
-							<li>
-								<def>Mass</def>
-								<value>30</value>
-							</li>
-						</vehicleStats>
-					</li>
-				</upgrades>
-				
-				<ingredients>
-					<Steel>180</Steel>
-					<ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 			</li>
 		</nodes>

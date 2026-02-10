@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	<Vehicles.VehicleDef ParentName="CGF1_MWP_Vehicle_LandRoverSeries3_Base">
+		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Tent_</defName>
+		<label>Land Rover Series 3 109 Tent</label>
+		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Tent covered cargo variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/LandRoverSeries3109_Tent/LandRoverSeries3109_Tent</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(3.33, 5.55)</drawSize>
+			<color>(120, 130, 115)</color>
+			<colorTwo>(56, 55, 50)</colorTwo>
+			<colorThree>(100, 69, 59)</colorThree>
+		</graphicData>
+		
+		<buildDef>CGF1_MWP_Vehicle_LandRoverSeries3109Tent_Blueprint</buildDef>
+		
+		<size>(2,5)</size>
+		
+		<statBases>
+			<MarketValue>1650</MarketValue>
+		</statBases>
+		
+		<vehicleStats>
+			<Mass>200</Mass>
+			<MoveSpeed>8.8</MoveSpeed>
+			<CargoCapacity>600</CargoCapacity>
+			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.1</AccelerationRate>
+		</vehicleStats>
+		
+		<properties>	
+			<roles>
+				<li>
+					<key>driver</key>
+					<label>Driver</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					
+					<handlingTypes>
+						<li>Movement</li>
+					</handlingTypes>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 0)</li>
+						</cells>
+					</hitbox>
+				</li>
+				<li>
+					<key>passenger</key>
+					<label>Passenger</label>
+					<slots>1</slots>
+					
+					<hitbox>
+						<cells>
+							<li>(1, 0)</li>
+						</cells>
+					</hitbox>
+				</li>
+			</roles>
+		</properties>
+		
+		<components>
+			<li>
+				<key>Roof</key>
+				<label>Roof</label>
+				<health>45</health>
+				<depth>External</depth>
+			</li>
+		</components>
+		
+		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Chemfuel</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>20.5</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>120</fuelCapacity>
+			</li>
+		</comps>
+	</Vehicles.VehicleDef>
+</Defs>

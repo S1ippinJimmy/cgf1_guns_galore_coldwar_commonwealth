@@ -2,21 +2,21 @@
 
 <Defs>	
 	<Vehicles.VehicleDef ParentName="CGF1_MWP_Vehicle_LandRoverSeries3_Base">
-		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109_</defName>
-		<label>Land Rover Series 3 109</label>
-		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_</defName>
+		<label>Land Rover Series 3 109 Tube</label>
+		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Uncovered troop-carrier variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x5\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		
 		<graphicData>
-			<texPath>CGF1/Vehicle/LandRoverSeries3109/LandRoverSeries3109</texPath>
+			<texPath>CGF1/Vehicle/LandRoverSeries3109_Tube/LandRoverSeries3109_Tube</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(3.3, 4.4)</drawSize>
-			<color>(215, 200, 175)</color>
+			<drawSize>(3.33, 5.55)</drawSize>
+			<color>(120, 130, 115)</color>
 			<colorTwo>(56, 55, 50)</colorTwo>
 			<colorThree>(100, 69, 59)</colorThree>
 		</graphicData>
 		
-		<buildDef>CGF1_MWP_Vehicle_LandRoverSeries3109_Blueprint</buildDef>
+		<buildDef>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_Blueprint</buildDef>
 		
 		<size>(2,5)</size>
 		
@@ -27,7 +27,7 @@
 		<vehicleStats>
 			<Mass>180</Mass>
 			<MoveSpeed>8.8</MoveSpeed>
-			<CargoCapacity>600</CargoCapacity>
+			<CargoCapacity>450</CargoCapacity>
 			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.1</AccelerationRate>
 		</vehicleStats>
 		
@@ -36,14 +36,28 @@
 				<li>
 					<rotation>0</rotation>
 					<graphicData>
-						<texPath>CGF1/Vehicle/LandRoverSeries3109/LandRoverSeries3109Overlay</texPath>
+						<texPath>CGF1/Vehicle/LandRoverSeries3109_Tube/LandRoverSeries3109Overlay_Tube</texPath>
 						<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-						<drawSize>(3.3, 4.4)</drawSize>
+						<drawSize>(3.33, 5.55)</drawSize>
 						<!--<drawOffsetNorth>(0, 0, 1.3)</drawOffsetNorth>
 						<drawOffsetEast>(0.55, 0, 0.5)</drawOffsetEast>
 						<drawOffsetSouth>(0, 0, 0.125)</drawOffsetSouth>
 						<drawOffsetWest>(-0.55, 0, 0.5)</drawOffsetWest>-->
 						<layer>10</layer>
+						<shaderType>CutoutComplexPattern</shaderType>
+					</graphicData>
+				</li>
+				<li>
+					<rotation>0</rotation>
+					<graphicData>
+						<texPath>CGF1/Vehicle/LandRoverSeries3109_Tube/LandRoverSeries3109Overlay2</texPath>
+						<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+						<drawSize>(3.33, 5.55)</drawSize>
+						<!--<drawOffsetNorth>(0, 0, 1.3)</drawOffsetNorth>
+						<drawOffsetEast>(0.55, 0, 0.5)</drawOffsetEast>
+						<drawOffsetSouth>(0, 0, 0.125)</drawOffsetSouth>
+						<drawOffsetWest>(-0.55, 0, 0.5)</drawOffsetWest>-->
+						<layer>11</layer>
 						<shaderType>CutoutComplexPattern</shaderType>
 					</graphicData>
 				</li>
@@ -96,15 +110,6 @@
 			</roles>
 		</properties>
 		
-		<!--<components>
-			<li>
-				<key>Roof</key>
-				<label>Roof</label>
-				<health>45</health>
-				<depth>External</depth>
-			</li>
-		</components>-->
-		
 		<comps>
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
@@ -114,7 +119,7 @@
 				<fuelCapacity>120</fuelCapacity>
 			</li>
 			<li Class = "Vehicles.CompProperties_UpgradeTree">
-				<def>CGF1_MWP_Vehicle_LandRoverSeries3109_UpgradeTree</def>
+				<def>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_UpgradeTree</def>
 			</li>
 			<li Class="Vehicles.CompProperties_VehicleTurrets">
 				<turrets/>
