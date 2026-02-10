@@ -55,8 +55,8 @@
 								<turretDef>CGF1_MWP_Vehicle_TurretGun_L7A1_</turretDef>
 								
 								<renderProperties>
-									<north>(0.01, -0.18)</north>
-									<south>(0, 1.53)</south>
+									<north>(0.01, 1.2)</north>
+									<south>(0, 0.7)</south>
 									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
@@ -127,8 +127,8 @@
 								<turretDef>CGF1_MWP_Vehicle_TurretGun_L3A4_Medium_</turretDef>
 								
 								<renderProperties>
-									<north>(0.01, -0.18)</north>
-									<south>(0, 1.53)</south>
+									<north>(0.01, 1.2)</north>
+									<south>(0, 0.7)</south>
 									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
@@ -199,8 +199,8 @@
 								<turretDef>CGF1_MWP_Vehicle_TurretGun_M2HB_Medium_</turretDef>
 								
 								<renderProperties>
-									<north>(0.01, -0.18)</north>
-									<south>(0, 1.53)</south>
+									<north>(0.01, 1.2)</north>
+									<south>(0, 0.7)</south>
 									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
@@ -271,8 +271,8 @@
 								<turretDef>CGF1_MWP_Vehicle_TurretGun_Mk19Mod3_</turretDef>
 								
 								<renderProperties>
-									<north>(0.01, -0.18)</north>
-									<south>(0, 1.53)</south>
+									<north>(0.01, 1.2)</north>
+									<south>(0, 0.7)</south>
 									<east>(0.0, 0.58)</east>
 								</renderProperties>
 								<drawLayer>40</drawLayer>
@@ -280,7 +280,7 @@
 								<gizmoLabel>Mk.19</gizmoLabel>
 								
 								<angleRestricted>(335, 25)</angleRestricted>
-								<aimPieOffset>(0, 0.4)</aimPieOffset>
+								<aimPieOffset>(0, 0.0)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>

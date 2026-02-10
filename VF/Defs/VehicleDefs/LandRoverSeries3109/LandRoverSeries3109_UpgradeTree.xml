@@ -323,7 +323,7 @@
 								<gizmoLabel>Mk.19</gizmoLabel>
 								
 								<angleRestricted/>
-								<aimPieOffset>(0, 0.7)</aimPieOffset>
+								<aimPieOffset>(0, 0.3)</aimPieOffset>
 								
 								<key>mainTurret</key>
 							</li>
