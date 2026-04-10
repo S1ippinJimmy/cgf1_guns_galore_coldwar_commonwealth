@@ -7,7 +7,7 @@
 		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
 		<graphicData>
 			<texPath>CGF1/Gun/Enfield_L85A1_L123A1_SUSAT</texPath>
-			<drawSize>1.00</drawSize>
+			<drawSize>1.13</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<recipeUsers>
@@ -70,7 +70,7 @@
 				</targetParams>
 				<onlyManualCast>true</onlyManualCast>
 				<label>L123A1</label>
-				<commandIcon>CGF1/Underbarrel/L123A1</commandIcon>
+				<commandIcon>CGF1/Underbarrel/AG36</commandIcon>
 			</li>
 		</verbs>
 		<tools>

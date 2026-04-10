@@ -5,7 +5,7 @@
 		<defName>CGF1_MWP_Vehicle_FV432_Blueprint</defName>
 		<label>FV432</label>
 		<description>A tracked British armored patrol carrier made by GKN Sankey.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Commander x1, Passenger x10\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		<designationCategory>VF_Vehicles</designationCategory>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/FV432/FV432</texPath>

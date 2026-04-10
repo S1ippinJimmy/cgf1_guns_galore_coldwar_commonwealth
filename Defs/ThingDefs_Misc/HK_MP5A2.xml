@@ -36,9 +36,6 @@
 			<li>CGF1_SMG_Civilian</li>
 			<li>CGF1_SMG_Military</li>
 			<li>CGF1_SMG_Military_Advanced</li>
-			
-			<li>CGF1_FG_CWUSA_Police_SWAT_Light</li>
-			<li>CGF1_FG_CWUSA_Police_Cop_SWAT</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>

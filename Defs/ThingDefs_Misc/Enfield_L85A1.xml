@@ -7,7 +7,7 @@
 		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
 		<graphicData>
 			<texPath>CGF1/Gun/Enfield_L85A1</texPath>
-			<drawSize>1.00</drawSize>
+			<drawSize>1.13</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<recipeUsers>
@@ -83,6 +83,9 @@
 			</li>
 		</modExtensions>
 		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Common</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T0">
@@ -91,7 +94,7 @@
 		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
 		<graphicData>
 			<texPath>CGF1/Gun/UP/Enfield_L85A1_Bayonet</texPath>
-			<drawSize>1.35</drawSize>
+			<drawSize>1.13</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<recipeUsers>
@@ -173,7 +176,7 @@
 		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
 		<graphicData>
 			<texPath>CGF1/Gun/UP/Enfield_L85A1_SD</texPath>
-			<drawSize>1.35</drawSize>
+			<drawSize>1.13</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<recipeUsers>

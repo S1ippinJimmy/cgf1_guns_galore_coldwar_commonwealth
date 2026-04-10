@@ -5,7 +5,7 @@
 		<defName>CGF1_MWP_Vehicle_FV4201Chieftain_Blueprint</defName>
 		<label>FV4201 Chieftain</label>
 		<description>A British main battle tank.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Commander x1, Gunner x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		<designationCategory>VF_Vehicles</designationCategory>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/FV4201Chieftain/FV4201Chieftain</texPath>

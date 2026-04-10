@@ -81,7 +81,7 @@ This is a Colt Model 601 (M16) rifle converted to 4.85x49mm caliber, the same ro
 				<def>MF_StandardMuzzleFalshThree</def>
 				<drawSize>(0.6,0.6)</drawSize>
 				<offsets>
-					<li>(0.65,0.05)</li>
+					<li>(0.65,0.04)</li>
 				</offsets>
 			</li>
 		</modExtensions>

@@ -3,9 +3,9 @@
 <Defs>
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_Blueprint</defName>
-		<label>Land Rover Series 3 109 Tube</label>
+		<label>Sand Rover Series 3 109 Tube</label>
 		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Uncovered troop-carrier variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x5\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		<designationCategory>VF_Vehicles</designationCategory>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/LandRoverSeries3109_Tube/LandRoverSeries3109_Tube</texPath>

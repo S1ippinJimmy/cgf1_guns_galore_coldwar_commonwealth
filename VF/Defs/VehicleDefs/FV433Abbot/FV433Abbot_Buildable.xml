@@ -5,7 +5,7 @@
 		<defName>CGF1_MWP_Vehicle_FV433Abbot_Blueprint</defName>
 		<label>FV433 Abbot</label>
 		<description>A tracked British self-propelled gun made by Vickers.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Commander x1, Gunner x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		<designationCategory>VF_Vehicles</designationCategory>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/FV433Abbot/FV433Abbot</texPath>

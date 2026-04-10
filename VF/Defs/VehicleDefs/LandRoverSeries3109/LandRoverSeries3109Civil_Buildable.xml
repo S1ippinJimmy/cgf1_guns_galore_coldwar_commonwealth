@@ -5,7 +5,7 @@
 		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Civil_Blueprint</defName>
 		<label>Land Rover Series 3 109 Civil</label>
 		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Four-door hard top "civil" variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x3\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		<designationCategory>VF_Vehicles</designationCategory>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/LandRoverSeries3109_Civil/LandRoverSeries3109_Civil</texPath>

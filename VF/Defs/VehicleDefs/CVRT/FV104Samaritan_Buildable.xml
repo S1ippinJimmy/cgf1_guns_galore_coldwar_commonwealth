@@ -5,7 +5,7 @@
 		<defName>CGF1_MWP_Vehicle_FV104Samaritan_Blueprint</defName>
 		<label>FV104 Samaritan</label>
 		<description>A tracked, armored British ambulance vehicle based on the CVR(T) platform.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x6\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
-		<designationCategory>VF_Vehicles</designationCategory>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/FV104Samaritan/FV104Samaritan</texPath>

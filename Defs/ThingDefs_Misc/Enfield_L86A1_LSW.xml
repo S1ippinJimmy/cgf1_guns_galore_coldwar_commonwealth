@@ -7,7 +7,7 @@
 		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
 		<graphicData>
 			<texPath>CGF1/Gun/Enfield_L86A1_LSW</texPath>
-			<drawSize>1.00</drawSize>
+			<drawSize>1.02</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<recipeUsers>
@@ -86,6 +86,9 @@
 			</li>
 		</modExtensions>
 		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Common</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	
 </Defs>
