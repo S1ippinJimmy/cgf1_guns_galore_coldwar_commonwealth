@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+
 	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T0">
-		<defName>CGF1_MWP_Enfield_L85A1_L123A1_SUSAT_</defName>
-		<label>Enfield L85A1 L123A1 (SUSAT)</label>
+		<defName>CGF1_MWP_Enfield_L85A1_HG40_</defName>
+		<label>Enfield L85A1 HG40</label>
 		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
 		<graphicData>
-			<texPath>CGF1/Gun/Enfield_L85A1_L123A1_SUSAT</texPath>
+			<texPath>CGF1/Gun/Enfield_L85A1_HG40</texPath>
 			<drawSize>1.13</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<recipeUsers>
 				<li>CGF1_MWP_Building_Gunsmith</li>
 			</recipeUsers>
-			<researchPrerequisite>CGF1_MWP_Research_T10_ModernFirearms</researchPrerequisite>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>70</Steel>
-			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentIndustrial>9</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>51000</WorkToMake>
-			<Mass>4.3</Mass>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>4.2</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
@@ -44,15 +44,15 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CGF1_MWP_Bullet_556x45mmNATO_Auto</defaultProjectile>
-				<warmupTime>1.15</warmupTime>
-				<range>33.9</range>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>CGF1_MWP_SFX_Rifle_Auto8</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<label>L85A1</label>
-				<commandIcon>CGF1/Gun/Enfield_L85A1_L123A1_SUSAT</commandIcon>
+				<commandIcon>CGF1/Gun/Enfield_L85A1_HG40</commandIcon>
 			</li>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -69,8 +69,8 @@
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 				<onlyManualCast>true</onlyManualCast>
-				<label>L123A1</label>
-				<commandIcon>CGF1/Underbarrel/AG36</commandIcon>
+				<label>HG40</label>
+				<commandIcon>CGF1/Underbarrel/HG40</commandIcon>
 			</li>
 		</verbs>
 		<tools>
@@ -102,11 +102,11 @@
 						<separateToggle>false</separateToggle>
 					</li>
 					<li>
-						<label>L123A1</label>
+						<label>HG40</label>
 						<canBeToggled>true</canBeToggled>
 						<separateToggle>false</separateToggle>
 						<description>Caliber: 40x46mm. 1-round tube. Single shot.					
-The Heckler and Koch AG36 is a single-shot 40mm grenade launcher descended from HK's earlier HK69/HK79 series. It was designed as an addition to the G36 rifle, with the AG36 designation (Anbaugranatwerfer or "attached grenade launcher") referring as such. The AG36 has also been adapted for various other firearms, including the British L85/SA80 series, where it is referred to as the L123 (A1-A3.) Although it was tested on the L85A1, it was never formally used in that configuration, only being employed on the later L85A2.</description>
+The Hilton HG40 is a single-shot 40mm grenade launcher developed by the Hilton Gun Company, a small firm formerly based in Derbyshire. It is a relatively obscure grenade launcher design with a drop-breech system similar to the HK79, and it was tested for use with the SA80/L85 circa 1991, although it was never adopted.</description>
 					</li>
 				</verbProps>
 			</li>

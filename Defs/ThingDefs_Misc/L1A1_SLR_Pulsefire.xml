@@ -60,7 +60,7 @@
 				<verbClass>VEF.Weapons.Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CGF1_MWP_Projectile_Flamethrower_Pulsefire</defaultProjectile>
-				<warmupTime>1.6</warmupTime>
+				<warmupTime>2</warmupTime>
 				<range>10.9</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>CGF1_GG_SFXR_Flamethrower</soundCast>

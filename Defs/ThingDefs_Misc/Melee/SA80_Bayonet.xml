@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="CGF1_MWP_Badlands_Bowie" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_SA80_Bayonet</defName>
+		<label>SA80 Bayonet</label>
+		<description>A bayonet designed for use with the Enfield SA80 / L85 series of weapons.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/SA80_Bayonet</texPath>
+			<drawSize>0.7</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>	
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>35</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ButcheryFleshSpeed>0.10</ButcheryFleshSpeed>
+			<ButcheryFleshEfficiency>0.05</ButcheryFleshEfficiency>
+		</equippedStatOffsets>
+		<relicChance>0.0</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_AncientSoldier_Armory</li>
+			<li>CGF1_Weapon_Imperial_Trader</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarUK</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			 <li>
+				<label>blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.5</cooldownTime>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			  </li>
+		</tools>
+		<generateCommonality>0.10</generateCommonality> <!-- Average -->
+	</ThingDef>
+	
+</Defs>

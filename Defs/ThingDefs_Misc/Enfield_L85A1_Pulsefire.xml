@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+
 	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T0">
-		<defName>CGF1_MWP_Enfield_L85A1_L123A1_SUSAT_</defName>
-		<label>Enfield L85A1 L123A1 (SUSAT)</label>
+		<defName>CGF1_MWP_Enfield_L85A1_Pulsefire_</defName>
+		<label>Enfield L85A1 Pulsefire</label>
 		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.</description>
 		<graphicData>
-			<texPath>CGF1/Gun/Enfield_L85A1_L123A1_SUSAT</texPath>
+			<texPath>CGF1/Gun/Enfield_L85A1_Pulsefire</texPath>
 			<drawSize>1.13</drawSize>
 		</graphicData>
 		<recipeMaker>
@@ -19,12 +19,12 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>70</Steel>
-			<ComponentIndustrial>10</ComponentIndustrial>
+			<Steel>65</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>51000</WorkToMake>
-			<Mass>4.3</Mass>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>5.3</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
@@ -33,6 +33,7 @@
 		</statBases>
 		<equippedAngleOffset>40</equippedAngleOffset>
 		<weaponTags>
+			<li>CGF1_AR_Military</li>
 			<li>CGF1_AR_Military_Advanced</li>
 		</weaponTags>
 		<tradeTags>
@@ -44,33 +45,32 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CGF1_MWP_Bullet_556x45mmNATO_Auto</defaultProjectile>
-				<warmupTime>1.15</warmupTime>
-				<range>33.9</range>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>CGF1_MWP_SFX_Rifle_Auto8</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<label>L85A1</label>
-				<commandIcon>CGF1/Gun/Enfield_L85A1_L123A1_SUSAT</commandIcon>
+				<commandIcon>CGF1/Gun/Enfield_L85A1_Pulsefire</commandIcon>
 			</li>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>VEF.Weapons.Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>CGF1_MWP_Bullet_40x46mm_Grenade</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>20.9</range>
-				<forcedMissRadius>1.9</forcedMissRadius>
+				<defaultProjectile>CGF1_MWP_Projectile_Flamethrower_Pulsefire</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>10.9</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>CGF1_MWP_SFX_GrenadeLauncher1</soundCast>
+				<soundCast>CGF1_GG_SFXR_Flamethrower</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
-				<muzzleFlashScale>2</muzzleFlashScale>
+				<muzzleFlashScale>14</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 				<onlyManualCast>true</onlyManualCast>
-				<label>L123A1</label>
-				<commandIcon>CGF1/Underbarrel/AG36</commandIcon>
+				<label>Pulsefire</label>
+				<commandIcon>CGF1/Underbarrel/Pulsefire_UBF</commandIcon>
 			</li>
 		</verbs>
 		<tools>
@@ -102,11 +102,10 @@
 						<separateToggle>false</separateToggle>
 					</li>
 					<li>
-						<label>L123A1</label>
+						<label>Pulsefire</label>
 						<canBeToggled>true</canBeToggled>
 						<separateToggle>false</separateToggle>
-						<description>Caliber: 40x46mm. 1-round tube. Single shot.					
-The Heckler and Koch AG36 is a single-shot 40mm grenade launcher descended from HK's earlier HK69/HK79 series. It was designed as an addition to the G36 rifle, with the AG36 designation (Anbaugranatwerfer or "attached grenade launcher") referring as such. The AG36 has also been adapted for various other firearms, including the British L85/SA80 series, where it is referred to as the L123 (A1-A3.) Although it was tested on the L85A1, it was never formally used in that configuration, only being employed on the later L85A2.</description>
+						<description>The Pulsefire Under-Barrel Flamethrower (UBF) is a portable incendiary projector that was designed to be mounted to various different weapon platforms, being compatible with standard picatinny and similar rail mounting configurations. It does not require a separate fuel tank or battery source, with the system being completely self-contained.</description>
 					</li>
 				</verbProps>
 			</li>
