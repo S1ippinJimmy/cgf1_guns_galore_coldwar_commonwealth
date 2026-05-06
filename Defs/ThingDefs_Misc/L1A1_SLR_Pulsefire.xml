@@ -19,8 +19,8 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Steel>85</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>50000</WorkToMake>
