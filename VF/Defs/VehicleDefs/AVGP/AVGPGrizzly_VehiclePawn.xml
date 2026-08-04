@@ -78,7 +78,7 @@
 					
 					<hitbox>
 						<cells>
-							<li>(-1, -1)</li>
+							<li>(-1, -0)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -86,11 +86,27 @@
 					<key>passenger</key>
 					<label>Passenger</label>
 					<slots>6</slots>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 0)</li>
+							<li>(0, -1)</li>
+							<li>(-1, -1)</li>
+							<li>(1, -1)</li>
+						</cells>
+					</hitbox>
 				</li>
 			</roles>
 		</properties>
 		
 		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Chemfuel</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>28</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>85</fuelCapacity>
+			</li>
 			<li Class="Vehicles.CompProperties_UpgradeTree">
 				<def>CGF1_MWP_Vehicle_AVGPGrizzly_UpgradeTree</def>
 			</li>

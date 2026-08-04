@@ -78,7 +78,7 @@
 					
 					<hitbox>
 						<cells>
-							<li>(-1, -1)</li>
+							<li>(-1, -0)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -86,6 +86,15 @@
 					<key>passenger</key>
 					<label>Passenger</label>
 					<slots>2</slots>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 0)</li>
+							<li>(0, -1)</li>
+							<li>(-1, -1)</li>
+							<li>(1, -1)</li>
+						</cells>
+					</hitbox>
 				</li>
 			</roles>
 		</properties>

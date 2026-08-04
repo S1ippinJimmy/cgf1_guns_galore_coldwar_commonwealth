@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CGF1_MWP_Vehicle_Harrier_GR3_Blueprint</defName>
+		<label>Harrier GR.3</label>
+		<description>A jet-powered, V/STOL attack plane. Manufactured by Hawker Siddeley, it was used by the Royal Air Force and Royal Navy until 1989, and by the United States Marine Corps (where it was designated AV-8A) until 1987.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/Harrier_GR3/Harrier_GR3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5.3, 9.275)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>30000</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		
+		<size>(5, 6)</size>
+		
+		<researchPrerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>240</Steel>
+			<ComponentIndustrial>24</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>CGF1_MWP_Vehicle_Harrier_GR3_</thingToSpawn>
+		
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

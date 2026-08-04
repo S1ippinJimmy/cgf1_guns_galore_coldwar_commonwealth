@@ -2,13 +2,13 @@
 
 <Defs>
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
-		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_Blueprint</defName>
-		<label>Sand Rover Series 3 109 Tube</label>
-		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Uncovered troop-carrier variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x3\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Van_Blueprint</defName>
+		<label>Land Rover Series 3 109 Van</label>
+		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Hardcover van variant with room for numerous occupants.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x5\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
 		
 		<graphicData>
-			<texPath>CGF1/Vehicle/LandRoverSeries3109_Tube/LandRoverSeries3109_Tube</texPath>
+			<texPath>CGF1/Vehicle/LandRoverSeries3109_Van/LandRoverSeries3109_Van</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.33, 5.55)</drawSize>
 		</graphicData>
@@ -26,13 +26,13 @@
 		</researchPrerequisites>
 		
 		<costList>
-			<Steel>210</Steel>
+			<Steel>220</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		
-		<thingToSpawn>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_</thingToSpawn>
+		<thingToSpawn>CGF1_MWP_Vehicle_LandRoverSeries3109Van_</thingToSpawn>
 		
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</Vehicles.VehicleBuildDef>

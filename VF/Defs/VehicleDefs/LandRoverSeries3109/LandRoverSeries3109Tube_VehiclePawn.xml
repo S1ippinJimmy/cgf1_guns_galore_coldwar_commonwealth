@@ -4,7 +4,7 @@
 	<Vehicles.VehicleDef ParentName="CGF1_MWP_Vehicle_LandRoverSeries3_Base">
 		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Tube_</defName>
 		<label>Land Rover Series 3 109 Tube</label>
-		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Uncovered troop-carrier variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x5\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Uncovered troop-carrier variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x3\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		
 		<graphicData>
 			<texPath>CGF1/Vehicle/LandRoverSeries3109_Tube/LandRoverSeries3109_Tube</texPath>
@@ -57,7 +57,7 @@
 						<drawOffsetEast>(0.55, 0, 0.5)</drawOffsetEast>
 						<drawOffsetSouth>(0, 0, 0.125)</drawOffsetSouth>
 						<drawOffsetWest>(-0.55, 0, 0.5)</drawOffsetWest>-->
-						<layer>12</layer>
+						<layer>17</layer>
 						<shaderType>CutoutComplexPattern</shaderType>
 					</graphicData>
 				</li>
@@ -105,6 +105,58 @@
 						<drawOffsetNorth>(-0.37, 0, 0.4)</drawOffsetNorth>
 						<drawOffsetSouth>(0.38, 0, 0.1)</drawOffsetSouth>
 						<drawOffsetEast>(0.37, 0, 0.67)</drawOffsetEast>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger_rear1</key>
+					<label>Rear Passenger</label>
+					<slots>1</slots>
+					
+					<hitbox>
+						<cells>
+							<li>(1, -2)</li>
+						</cells>
+					</hitbox>
+					
+					<pawnRenderer>
+						<layer>9</layer>
+						<north>West</north>
+						<northEast>West</northEast>
+						<northWest>West</northWest>
+						<east>North</east>
+						<west>North</west>
+						<south>East</south>
+						<southEast>East</southEast>
+						<southWest>East</southWest>
+						<drawOffsetNorth>(0.5, 0, -1.0)</drawOffsetNorth>
+						<drawOffsetSouth>(-0.5, 0, 1.6)</drawOffsetSouth>
+						<drawOffsetEast>(-1.6, 0, 0.3)</drawOffsetEast>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger_rear2</key>
+					<label>Rear Passenger</label>
+					<slots>1</slots>
+					
+					<hitbox>
+						<cells>
+							<li>(0, -2)</li>
+						</cells>
+					</hitbox>
+					
+					<pawnRenderer>
+						<layer>8</layer>
+						<north>East</north>
+						<northEast>East</northEast>
+						<northWest>East</northWest>
+						<east>South</east>
+						<west>South</west>
+						<south>West</south>
+						<southEast>West</southEast>
+						<southWest>West</southWest>
+						<drawOffsetNorth>(-0.5, 0, -1.0)</drawOffsetNorth>
+						<drawOffsetSouth>(0.5, 0, 1.6)</drawOffsetSouth>
+						<drawOffsetEast>(-1.6, 0, 0.75)</drawOffsetEast>
 					</pawnRenderer>
 				</li>
 			</roles>

@@ -40,10 +40,10 @@
 								</turretIds>
 								
 								<pawnRenderer>
-									<layer>11</layer>
-									<layerNorth>18</layerNorth>
-									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
-									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
+									<layer>7</layer>
+									<layerNorth>8</layerNorth>
+									<drawOffsetNorth>(0.0, 0, -0.1)</drawOffsetNorth>
+									<drawOffsetSouth>(-0.0, 0, 1.2)</drawOffsetSouth>
 									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>
@@ -112,10 +112,10 @@
 								</turretIds>
 								
 								<pawnRenderer>
-									<layer>11</layer>
-									<layerNorth>18</layerNorth>
-									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
-									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
+									<layer>7</layer>
+									<layerNorth>8</layerNorth>
+									<drawOffsetNorth>(0.0, 0, -0.1)</drawOffsetNorth>
+									<drawOffsetSouth>(-0.0, 0, 1.2)</drawOffsetSouth>
 									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>
@@ -184,10 +184,10 @@
 								</turretIds>
 								
 								<pawnRenderer>
-									<layer>11</layer>
-									<layerNorth>18</layerNorth>
-									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
-									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
+									<layer>7</layer>
+									<layerNorth>8</layerNorth>
+									<drawOffsetNorth>(0.0, 0, -0.1)</drawOffsetNorth>
+									<drawOffsetSouth>(-0.0, 0, 1.2)</drawOffsetSouth>
 									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>
@@ -256,10 +256,10 @@
 								</turretIds>
 								
 								<pawnRenderer>
-									<layer>11</layer>
-									<layerNorth>18</layerNorth>
-									<drawOffsetNorth>(0.0, 0, -1.1)</drawOffsetNorth>
-									<drawOffsetSouth>(-0.0, 0, 2.1)</drawOffsetSouth>
+									<layer>7</layer>
+									<layerNorth>8</layerNorth>
+									<drawOffsetNorth>(0.0, 0, -0.1)</drawOffsetNorth>
+									<drawOffsetSouth>(-0.0, 0, 1.2)</drawOffsetSouth>
 									<drawOffsetEast>(-0.6, 0, 0.5)</drawOffsetEast>
 								</pawnRenderer>
 							</li>

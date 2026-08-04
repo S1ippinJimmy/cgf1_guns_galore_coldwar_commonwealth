@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CGF1_MWP_Vehicle_SaxonAT105_Blueprint</defName>
+		<label>Saxon AT105</label>
+		<description>A British armored personnel carrier designed by GKN Sankey in the 1970s.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x6\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/SaxonAT105/SaxonAT105</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 5)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(3, 6)</size>
+		
+		<researchPrerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>350</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>CGF1_MWP_Vehicle_SaxonAT105_</thingToSpawn>
+		
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

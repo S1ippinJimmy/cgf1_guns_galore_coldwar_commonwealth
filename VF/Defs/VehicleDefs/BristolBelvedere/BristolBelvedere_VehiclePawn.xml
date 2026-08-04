@@ -47,22 +47,22 @@
 			<li>
 				<start>IgnitionOn</start>
 				<stop>IgnitionOff</stop>
-				<value>CGF1_GG_SFXR_OneShot_Start_HeavyTank</value>
+				<value>CGF1_GG_SFXR_OneShot_Start_Heli</value>
 			</li>
 			<li>
 				<start>AerialVehicleLaunch</start>
 				<stop>AerialVehicleLeftMap</stop>
-				<value>CGF1_GG_SFXR_Sustainer_Idle_UH1_Iroquois</value>
+				<value>CGF1_GG_SFXR_Sustainer_Idle_CH53E</value>
 			</li>
 			<li>
 				<start>AerialVehicleLanding</start>
 				<stop>Spawned</stop>
-				<value>CGF1_GG_SFXR_Sustainer_Idle_UH1_Iroquois</value>
+				<value>CGF1_GG_SFXR_Sustainer_Idle_CH53E</value>
 			</li>
 			<li>
 				<start>AerialVehicleCrashLanding</start>
 				<stop>Spawned</stop>
-				<value>CGF1_GG_SFXR_Sustainer_Idle_UH1_Iroquois</value>
+				<value>CGF1_GG_SFXR_Sustainer_Idle_CH53E</value>
 			</li>
 		</soundSustainersOnEvent>
 		
@@ -125,8 +125,7 @@
 					
 					<hitbox>
 						<cells>
-							<li>(0, 1)</li>
-							<li>(0, -1)</li>
+							<li>(0, 5)</li>
 						</cells>
 					</hitbox>
 				</li>
@@ -137,12 +136,13 @@
 					
 					<hitbox>
 						<cells>
-							<li>(-1, 5)</li>
-							<li>(0, 5)</li>
-							<li>(1, 5)</li>
-							<li>(-1, 4)</li>
 							<li>(0, 4)</li>
-							<li>(1, 4)</li>
+							<li>(0, 3)</li>
+							<li>(0, 2)</li>
+							<li>(0, 1)</li>
+							<li>(0, 0)</li>
+							<li>(0, -1)</li>
+							<li>(0, -2)</li>
 						</cells>
 					</hitbox>
 				</li>

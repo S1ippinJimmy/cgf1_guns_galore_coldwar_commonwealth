@@ -2,21 +2,21 @@
 
 <Defs>	
 	<Vehicles.VehicleDef ParentName="CGF1_MWP_Vehicle_LandRoverSeries3_Base">
-		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Civil_</defName>
-		<label>Land Rover Series 3 109 Civil</label>
-		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Four-door hard top "civil" variant.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x3\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<defName>CGF1_MWP_Vehicle_LandRoverSeries3109Van_</defName>
+		<label>Land Rover Series 3 109 Van</label>
+		<description>A 1970s British off-road/utility vehicle with a long (109) wheelbase. Hardcover van variant with room for numerous occupants.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x5\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		
 		<graphicData>
-			<texPath>CGF1/Vehicle/LandRoverSeries3109_Civil/LandRoverSeries3109_Civil</texPath>
+			<texPath>CGF1/Vehicle/LandRoverSeries3109_Van/LandRoverSeries3109_Van</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(3.12, 5.2)</drawSize>
-			<color>(130, 170, 170)</color>
+			<drawSize>(3.33, 5.55)</drawSize>
+			<color>(215, 200, 175)</color>
 			<colorTwo>(56, 55, 50)</colorTwo>
 			<colorThree>(100, 69, 59)</colorThree>
 		</graphicData>
 		
-		<buildDef>CGF1_MWP_Vehicle_LandRoverSeries3109Civil_Blueprint</buildDef>
+		<buildDef>CGF1_MWP_Vehicle_LandRoverSeries3109Van_Blueprint</buildDef>
 		
 		<size>(2,5)</size>
 		
@@ -27,7 +27,7 @@
 		<vehicleStats>
 			<Mass>200</Mass>
 			<MoveSpeed>8.8</MoveSpeed>
-			<CargoCapacity>500</CargoCapacity>
+			<CargoCapacity>525</CargoCapacity>
 			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.1</AccelerationRate>
 		</vehicleStats>
 		
@@ -50,15 +50,24 @@
 					</hitbox>
 				</li>
 				<li>
-					<key>passenger</key>
-					<label>Passenger</label>
-					<slots>3</slots>
+					<key>passenger_front</key>
+					<label>Front Passenger</label>
+					<slots>1</slots>
 					
 					<hitbox>
 						<cells>
 							<li>(0, 1)</li>
-							<li>(0, 0)</li>
-							<li>(1, 0)</li>
+						</cells>
+					</hitbox>
+				</li>	
+				<li>
+					<key>passenger_rear</key>
+					<label>Rear Passenger</label>
+					<slots>4</slots>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 1)</li>
 						</cells>
 					</hitbox>
 				</li>
