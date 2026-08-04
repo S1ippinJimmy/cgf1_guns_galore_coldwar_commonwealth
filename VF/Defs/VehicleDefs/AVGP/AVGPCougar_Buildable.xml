@@ -19,7 +19,7 @@
 			<Flammability>0.05</Flammability>
 		</statBases>
 		
-		<size>(3, 6)</size>
+		<size>(3, 5)</size>
 		
 		<researchPrerequisites>
 			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
