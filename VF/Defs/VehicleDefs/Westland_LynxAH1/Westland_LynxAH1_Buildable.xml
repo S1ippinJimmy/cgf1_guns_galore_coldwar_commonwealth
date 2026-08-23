@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CGF1_MWP_Vehicle_Westland_LynxAH1_Blueprint</defName>
+		<label>Westland Lynx AH1</label>
+		<description>A twin-engine, multirole helicopter manufactured by Westland Helicopters.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x2, Passenger x8\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>CGF1_MWP_Category_GunsGalore</designationCategory>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/Westland_LynxAH1/Westland_LynxAH1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.7, 13.5)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>35000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(3, 9)</size>
+		
+		<researchPrerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>740</Steel>
+			<ComponentIndustrial>27</ComponentIndustrial>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>CGF1_MWP_Vehicle_Westland_LynxAH1_</thingToSpawn>
+		
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>
